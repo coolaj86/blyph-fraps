@@ -3,6 +3,36 @@ Blyph Browser Client
 
 This is the application which is loaded into your browser from [Blyph.com](http://blyph.com).
 
+Contributing
+===
+
+1. Install `XCode` from the `App Store`
+
+2. Intstall `brew`, `node`, `npm`, and other development tools
+
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+        brew install node
+        curl http://npmjs.org/install.sh | sh
+        npm install -g \
+          validate-json \
+          pp-json \
+          mailed \
+          served \
+          pakmanager \
+          ender \
+          jade \
+          spark \
+          less
+
+3. Install and Test Blyph
+
+        git clone git://github.com/Blyph/blyph.com
+        # For Developers: git clone git@github.com:Blyph/blyph.com
+        cd blyph.com
+        ./deploy.sh
+        served 3200
+        open "http://localhost:3200"
+
 License
 ===
 
