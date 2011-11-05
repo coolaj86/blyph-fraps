@@ -1,0 +1,35 @@
+{
+  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.info/)",
+  "private": true,
+  "name": "blyph-client",
+  "description": "Browser-based client for blyph.com's API",
+  "version": "0.1.0",
+  "homepage": "http://blyph.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Blyph/blyph.com.git"
+  },
+  "main": "lib/index",
+  "scripts": {
+    "test": "served 3200; open http://localhost:3200"
+  },
+  "engines": {
+    "node": "~0.4.8",
+    "pakmanager": "*"
+  },
+  "browserDependencies": {
+    "json-storage": "*",
+    "md5": "*",
+    "jQuery": "*",
+    "jeesh": "*",
+    "url": "*",
+    "ahr2": "*",
+    "join": "*",
+    "querystring": "*",
+    "futures": "*",
+    "campusbooks": "*",
+    "isbn": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

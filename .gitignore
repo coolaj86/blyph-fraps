@@ -1,0 +1,5 @@
+*.html
+*.css
+*.min.*
+javascripts/
+node_modules/
