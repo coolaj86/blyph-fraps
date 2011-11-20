@@ -16,7 +16,8 @@ fi
 
 lessc style.less > style.css
 jade index.jade
-
+jade splash-page.jade
+jade byu.jade
 pakmanager build
 cat pakmanaged.js > pakmanaged.tmp.js
 echo 'window.FormData = window.FormData || function FormData() {};' >> pakmanaged.js
