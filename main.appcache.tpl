@@ -10,7 +10,7 @@ CACHE:
 # list ALL assets which should be downloaded for offline use
 # no pattern matching is supported
 index.html
-pakmanaged.min.js
+pakmanaged.js
 
 FALLBACK:
 # give the offline equivalent of a 404
