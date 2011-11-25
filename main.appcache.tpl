@@ -16,6 +16,7 @@ FALLBACK:
 # give the offline equivalent of a 404
 # the first item is always treated as a prefix pattern
 # the second is always treated as the resource to provide
+/online.json /offline.json
 /images/ /offline.json
 / /offline.json
 
