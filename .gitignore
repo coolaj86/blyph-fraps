@@ -4,3 +4,5 @@
 javascripts/
 node_modules/
 pakmanaged.js
+main.appcache
+*.gz

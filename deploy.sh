@@ -22,4 +22,7 @@ pakmanager build
 cat pakmanaged.js > pakmanaged.tmp.js
 echo 'window.FormData = window.FormData || function FormData() {};' >> pakmanaged.js
 cat pakmanaged.tmp.js >> pakmanaged.js
+uglifyjs pakmanaged.js > pakmanaged.min.js
+#gzip pakmanaged.min.js -c > pakmanaged.min.js.gz
 rm pakmanaged.tmp.js pakmanaged.html
+sed -e "s/# VERSION.*/# VERSION `date +%s`/" main.appcache.tpl > main.appcache
