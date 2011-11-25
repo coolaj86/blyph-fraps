@@ -3,3 +3,4 @@
 *.min.*
 javascripts/
 node_modules/
+packmanaged.js
