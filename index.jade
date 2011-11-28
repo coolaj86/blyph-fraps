@@ -10,11 +10,16 @@ html
       script
         CFInstall.check({mode: "overlay",url: "gcf.html"});
     link(href='style.css', rel='stylesheet', type='text/css')
+    link(href='main.css', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Nunito:300,400,700&v1', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Bevan:regular&v1', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
   body
-    div(style='clear: both;')
+    #instruction_heading
+      input(35='35', type='image', img='img', src='images/Blyph-Logo.png', height='height', width='width', align='left')
+      #description-title
+        | A Local Textbook Trading engine
+    #wrapper
       #column1
         #logout(style='display: none;')
           h4
@@ -250,8 +255,6 @@ html
           #fb-root
           #fb-send(width='100')
             #fbml(width='100')
-        //twitter
-        a.twitter-share-button(href='http://twitter.com/share') Tweet
         //twitter
         //p#unique-link blyph.com
         //p Input this custom url into your message and get more points into the drawing.
