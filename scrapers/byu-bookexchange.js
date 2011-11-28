@@ -1,10 +1,12 @@
 // Book Exchange (isbn + course):
-var allBookIds = [];
+var allBookIds = []
+  , db = {}
+  ;
 (function () {
   "use strict";
 
   var jqScript
-    , db = {}
+    // , db = {}
     , memDb = {}
       // 3 days
     , maxAge = 3 * 24 * 60 * 60 * 1000
@@ -693,4 +695,87 @@ var allBookIds = [];
   jqScript.onload = scraper;
   document.body.appendChild(jqScript);
 }());
+/*
+
+    var emails = {}
+    function getBook(next, bookId) {
+      // "1DA03DEFE3900CA8D9A2AD12CF72575E"
+      var args
+        ;
+
+      $.ajax({
+          url: "startbuyAction.cfm"
+        , type: "POST"
+        , data: {
+              "book_id": bookId
+            , "email_text": "Hey," +
+                  "\n\nI'm a former BYU student working with my friend, a current BYU-er, on Blyph, a local book exchange, " + 
+                  "and I want to invite you to list your book here as well (it's pretty quick and painless)." + 
+                  "\n\nhttp://blyph.com" + 
+                  "\n\nWe have lots of other BYU students currently listing books as well as the best prices from online stores." +
+                  "\n\nI'd appreciate any feedback you have for us." +
+                  "\n\n\/=8^D" +
+                  "\n\nAJ ONeal" +
+                  "\nBlyph Techie Co-founder" + 
+                  "\n@coolaj86" + 
+                  "\nfb.com/coolaj86"
+            , "submit": "Sumbit"
+          }
+        , complete: function () {
+            args = arguments;
+            txt = args[0].responseText;
+            addr = /mailto:(.*)?"/.exec(txt);
+            if (addr) {
+              addr = addr[1];
+            }
+            emails[addr] = true;
+            console.log(addr);
+            next();
+          }
+      });
+    }
+
+function getNext() {
+  console.log(allBookIds.length);
+
+  var bookId = allBookIds.pop();
+  
+  if (!bookId) {
+    return;
+  }
+
+  getBook(getNext, bookId);
+}
+
+allBookIds = [];
+db.keys().forEach(function (key) {
+  var item;
+
+  if (!/courses/.exec(key)) {
+    return;
+  }
+
+  course = db.get(key);
+  if (!course.items || !course.items.length) {
+    return;
+  } 
+
+  courses.items.forEach(function (item) {
+    allBookIds.push(item);
+  });
+});
+
+var lemails = {};
+Object.keys(emails).forEach(function (email) {
+  lemails[email.trim().toLowerCase()] = true;
+});
+delete lemails['null'];
+Object.keys(lemails).join(',');
+
+emails
+emailed = {};
+notEmailed = {};
+
+
+*/
 // javascript:window.blys=document.createElement('script');blys.src="http://alpha.blyph.com/scrapers/byu-bookexchange.js";document.body.appendChild(blys)

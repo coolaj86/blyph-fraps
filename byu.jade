@@ -1,42 +1,41 @@
 !!! 5
 html
     head
-		title
-		|How to load your booklist from BYU.
-		link(href="http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1" rel="stylesheet" type="text/css")
-		link(href="style.less" rel="stylesheet" type="text/css")
-		script(src="./javascripts/ender.js")	
-		script(src="booklist/instructions.js")
-		body
-			#logo
-			#container
-			h1
-			Upload your booklist
-			ol
-				li
-  				h2
-  				| (1) Copy this text
-  				textarea(id="text-area">avascript:$.TOKEN='TOKEN_TPL';$.getScript('http://TPL.EXAMPLE.COM/booklist/byu.js');</textarea>
-  				| (be sure to get the whole thing)
-  				h2
-  				| (2) Log in to the BYU Book List.
-  				a(href="https://booklist.byu.edu/mybooklist?term=20115" target="_blank">booklist.byu.edu/mybooklist)
-  				a(href="https://booklist.byu.edu/mybooklist?term=20115" target="_blank" .booklist-url)
-				li
-				.screenshot1
-				li
-				| You may need to agree to the terms and conditions.
-				h2
-				| (3) Select the url bar and delete all characters
-				li .screenshot2
-				h2
-				| (4) Type the letter 'j'
-				h2
-				| (5) Paste the text you copied into the URL bar
-				li .screenshot3
-				h2
-				(6) Hit Enter
-				li
-				| your books for the semester will automatically load.
-
-
+    title
+    |How to load your booklist from BYU.
+    link(href="http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1", rel="stylesheet", type="text/css")
+    link(href="style.less", rel="stylesheet", type="text/css")
+    script(src="./javascripts/ender.js")
+    script(src="booklist/instructions.js")
+    body
+      #logo
+      #container
+      h1
+      Upload your booklist
+      ol
+        li
+          h2
+          | (1) Copy this text
+          textarea(id="text-area")
+            avascript:$.TOKEN='TOKEN_TPL';$.getScript('http://TPL.EXAMPLE.COM/booklist/byu.js');
+          | (be sure to get the whole thing)
+          h2
+          | (2) Log in to the BYU Book List.
+          a.booklist-url(href="https://booklist.byu.edu/mybooklist?term=20115", target="_blank")
+            booklist.byu.edu/mybooklist
+        li
+        .screenshot1
+        li
+        | You may need to agree to the terms and conditions.
+        h2
+        | (3) Select the url bar and delete all characters
+        li .screenshot2
+        h2
+        | (4) Type the letter 'j'
+        h2
+        | (5) Paste the text you copied into the URL bar
+        li .screenshot3
+        h2
+        | (6) Hit Enter
+        li
+        | your books for the semester will automatically load.
