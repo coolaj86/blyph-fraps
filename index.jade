@@ -18,39 +18,10 @@ html(manifest='main.appcache')
       input(35='35', type='image', img='img', src='images/logo.png', height='height', width='width', align='left')
       #description-title
         | A Local Textbook Trading engine
-   #search-menu
-    #saveyourinfo
-      h3 Start Saving your list
-      form#email_form
-        div
-          | Email:
-          input.form_field(type='text', name='email', value='email address', width='500px')
-        div
-          | School URL:
-          input.form_field(type='text', name='school', value='byu.edu', width='500px')
-        br
-        | Add / Update Optional Info:
-        br
-        div
-          | Name:
-          input.form_field(type='text', name='name', width='500px')
-        div
-          | Phone:
-          input.form_field(type='text', name='phone', width='500px')
-        input(type='checkbox', name='make-info-public', checked='checked')
-        | Allow others to see my contact info
-        div
-          input.button(type='submit', name='submit', value='Signup / Login')
-      a#gvoice(href='#gvoiceWidget') Have Questions? Need Help?
-      #gvoiceWidget(style='display: none;')
-        | Call AJ:
-        object(type='application/x-shockwave-flash', data='https://clients4.google.com/voice/embed/webCallButton', width='230', height='85')
-          param(name='movie', value='https://clients4.google.com/voice/embed/webCallButton')
-          param(name='wmode', value='transparent')
-          param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
-      br
-    //saveyourinfo
-   
+
+    #search-menu
+    #login-area
+      include partials/login-area
    
     #social-sharing
        fb:like(href='www.facebook.com/pages/Blyph/190889114300467', width='100' , height='20', show_faces='false', font='')
@@ -73,68 +44,9 @@ html(manifest='main.appcache')
               u Logout
               | .
         
-        .booklist_container.booklist-unsorted-data
-          header.booklist_unsorted Unsorted
-          ul
-            li.booklist-item
-              span.bli-title Elementary Linear Algebra
-              | [
-              span.bli-isbn
-              | ]
-        //booklist_container
-        .booklist_container.booklist-need-data
-          header.booklist_need I Need
-          ul
-            li.booklist-item
-              span.bli-title Elementary Linear Algebra
-              | [
-              span.bli-isbn
-              | ]
-              .match-available
-                span.person-match
-                  | (
-                  span.mbl-trade-matches 0
-                  | )
-                span.match-description Trades
-                span.online-match
-                  | (
-                  span.mbl-online-matches 0
-                  | )
-                span.match-description Online Results
-        //booklist_container
-        .booklist_container.booklist-have-data
-          header.booklist_have For Trade
-          ul
-            li.booklist-item
-              span.bli-title Elementary Linear Algebra
-              | [
-              span.bli-isbn
-              | ]
-              .match-available
-                span.person-match
-                  | (
-                  span.mbl-trade-matches 0
-                  | )
-                span.match-description trades available
-              .online-match
-                span.online-match
-                  | (
-                  span.mbl-online-matches 0
-                  | )
-                span.match-description Online Results
-        //booklist_container
-        .booklist_container.booklist-keep-data
-          header.booklist_keep Keeping
-          ul
-            li.booklist-item
-              span.mbl-trade-matches  
-              span.mbl-online-matches  
-              span.bli-title Elementary Linear Algebra
-              | [
-              span.bli-isbn
-              | ]
-        //booklist_container
-      //column1
+        #booklist-container-area
+          include partials/booklists
+
       #column2
         .searching-for-books
           h3 Tag old books for Trade. Tag this semester's books as Need
@@ -150,104 +62,11 @@ html(manifest='main.appcache')
             | Tag each book as Need, Trade, Keep (if you have it already), or Ignore (if you
             | don't care).
         //Results
-        #imported-booklist.item_list
-          .item
-            .image_frame
-              .item_picture
-                img.book-image(src='images/default-book.jpg')
-              //item_picture
-            //image_frame
-            .item_info
-              .title  Book Title 
-              //item_info
-              .book_course
-                span.course ENG 101
-              .semester FALL 2011
-              div(style='clear: both;')
-              .isbn
-                .isbn_10
-                  | ISBN10:
-                  span.isbn10 1234567890
-                //isbn_10
-                .isbn_13
-                  | ISBN13:
-                  span.isbn13 1234567890123
-                //isbn_13
-              //isbn
-              .edition
-                | Edition:
-                span.edition-data 1st
-              //edition
-              .authors  authors:Gray Bot, willhelm, Conto, 
-              //authors
-            //item_info
-            #item-bottom-container
-              .ibc-button.button-list2 Trade/Sell
-              .ibc-button.button-want2 Need
-              .ibc-button.button-keep2 Keep
-              .ibc-button.button-ignore2 Ignore
-            //item-bottom-container
-          div(style='clear: both;')  
-          //item
-        //item_list
-        #matches(style='display: none;')
-          .no-match
-            | We didn't find any trades for you at this time. But we did find some other
-            | results for you:
-          //no-match
-          #person-matches
-            .online-store-heading
-              | Fellow BYU Students
-            ul
-              li.result.ppl-widget
-                .person
-                  img(alt='Logo', src='no-image.jpeg')
-                // TODO use the gravatar identifier instead of an actual email address 
-                input.email(type='hidden')
-                .result-name
-                  | username
-                .ppl-write-message
-                  .button-get-it
-                    | Write Message
-                  | Suggested Price:
-                  .result-for-price
-                    | $80.00
-                  div(style='clear: both;')  
-                  // when the parent is clicked, this will be displayed
-                  .ppl-message(style='display: none;')
-                    .trade-message
-                      label.textbox-title(for='message')
-                        | When and where would you like to exchange?
-                      textarea.message-box(name='message', type='text', maxlength='600', placeholder='I humbly request exchange for...')
-                        | Hey @NAME
-                        | I'd like to exchange @TITLE for @USD.
-                        | Could we meet by @LOCATION at @TIME on @DATE?
-                      .ppl-warning
-                        | Use common sense when trading. Meet in public places and bring friends along.
-                      br
-                      button.ppl-send-message
-                        | Send Message
-                      div(style='clear: both;')  
-              //result
-          #online-matches
-            .online-store-heading
-              | Online Book Stores
-            ul
-              li.result
-                .store-image
-                  img(alt='Logo', src='no-image.jpeg')
-                //div class="result-name">Amazon</div
-                a.button-get-it.ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
-                .result-for-price
-                  | $800.00
-                //price
-                .ols-edition
-                  | EDITION
-                  //Int'l Edition
-              //result
-            div(style='clear: both;')
-        div(style='clear: both;')
-      //column2
+        #imported-booklist-area
+          include partials/imported-books
+        #matches-area
+          include partials/matches
+
       #column3
         #promotion-offer
           h4

@@ -1,0 +1,38 @@
+#imported-booklist.item_list
+  .item
+    .image_frame
+      .item_picture
+        img.book-image(src='images/default-book.jpg')
+      //item_picture
+    //image_frame
+    .item_info
+      .title  Book Title 
+      //item_info
+      .book_course
+        span.course ENG 101
+      .semester FALL 2011
+      div(style='clear: both;')
+      .isbn
+        .isbn_10
+          | ISBN10:
+          span.isbn10 1234567890
+        //isbn_10
+        .isbn_13
+          | ISBN13:
+          span.isbn13 1234567890123
+        //isbn_13
+      //isbn
+      .edition
+        | Edition:
+        span.edition-data 1st
+      //edition
+      .authors  authors:Gray Bot, willhelm, Conto, 
+      //authors
+    //item_info
+    #item-bottom-container
+      .ibc-button.button-list2 Trade/Sell
+      .ibc-button.button-want2 Need
+      .ibc-button.button-keep2 Keep
+      .ibc-button.button-ignore2 Ignore
+    //item-bottom-container
+  div(style='clear: both;')  
