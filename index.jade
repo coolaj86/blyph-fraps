@@ -30,9 +30,10 @@ html(manifest='main.appcache')
         input#search(name='search', type='text', placeholder='Search books by title or ISBN')
       input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='30', align='right')    
     
-   #wrapper
-    #loading-mask
-    div(style='clear: both;')
+    #wrapper
+      #loading-mask
+
+      div(style='clear: both;')
 
       #column1
         #logout(style='display: none;')
@@ -68,29 +69,17 @@ html(manifest='main.appcache')
           include partials/matches
 
       #column3
-        #promotion-offer
-          h4
-            //| Share Blyph with your friends and win a 16gb iPad 2!
-            //a(href='sweepstakes-rules.html') See Details
-        //promotional offer
-        //#ipad
-        //ipad
         div(style='clear: both;')
         #social-sharing
-          //facebook
           #fb-root
           #fb-send(width='100')
             #fbml(width='100')
-        //twitter
-        //p#unique-link blyph.com
-        //p Input this custom url into your message and get more points into the drawing.
-        
-      //column3
+
       div(style='clear: both;')
-    //wrapper
+
     #footer
       p ©Blyph 2011
-    //footer
+
     script(src='./pakmanaged.js')
     script(src='http://platform.twitter.com/widgets.js', type='text/javascript')
     script(src='http://connect.facebook.net/en_US/all.js#appId=220950287941840&xfbml=1')
