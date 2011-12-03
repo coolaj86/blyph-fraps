@@ -20,8 +20,6 @@ html(manifest='main.appcache')
       #description-title
         | A Local Textbook Trading engine
 
-    #login-area
-      include partials/login-area
    
     #social-sharing
        fb:like(href='www.facebook.com/pages/Blyph/190889114300467', width='100' , height='20', show_faces='false', font='')
@@ -37,15 +35,9 @@ html(manifest='main.appcache')
       div(style='clear: both;')
 
       #column1
-        #logout(style='display: none;')
-          h4
-            a(href='#logout', style='font-size: 18px;')
-              | Not
-              span.username username
-              | ?
-              u Logout
-              | .
-        
+        #login-area
+          include partials/login-area
+
         #booklist-container-area
           include partials/booklists
 
