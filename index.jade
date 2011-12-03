@@ -15,16 +15,16 @@ html(manifest='main.appcache')
     link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
   body
     #instruction_heading
-      input(35='35', type='image', img='img', src='images/logo.png', height='height', width='width', align='left')
+      img(src='images/logo.png')
       #description-title
         | A Local Textbook Trading engine
 
-    #search-menu
     #login-area
       include partials/login-area
    
     #social-sharing
        fb:like(href='www.facebook.com/pages/Blyph/190889114300467', width='100' , height='20', show_faces='false', font='')
+
     #searchbar
       form#search_form
         input#search(name='search', type='text', placeholder='Search books by title or ISBN')
