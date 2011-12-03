@@ -1,0 +1,31 @@
+html
+  head
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js')
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js')
+    script(type='text/javascript', src='//ajax.googleapis.com/ajax/libs/googleapis/0.0.4/googleapis.min.js')
+    script(type='text/javascript', src='//ajax.googleapis.com/jsapi')
+    script(type='text/javascript')
+      google.load("identitytoolkit", "1.0", {packages: ["ac"]});
+    script(type='text/javascript')
+      $(function() {
+      window.google.identitytoolkit.setConfig({
+      developerKey: "AIzaSyD5VMqEuxcyV3xCAGV6iEY09St38KTm17Y",
+      companyName: "Blyph LLC",
+      callbackUrl: "blyph.com/auth/google2",
+      realm: "",
+      userStatusUrl: "blyph.com/google/status",
+      loginUrl: "blyph.com/google/login",
+      signupUrl: "blyph.com/google/signup",
+      homeUrl: "blyph.com/google/home",
+      logoutUrl: "blyph.com/google/signout",
+      language: "en",
+      idps: ["GoogleApps", "Yahoo", "AOL", "Hotmail"],
+      tryFederatedFirst: true,
+      useCachedUserStatus: false
+      });
+      $("#navbar").accountChooser();
+      });
+  body
+    //
+       Insert the navbar element somewhere in the HTML page 
+    #navbar

@@ -1,0 +1,12 @@
+!!! 5
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Blyph.com
+  body
+    script
+      var newLocation = location.protocol + '//' + location.host + '/' + location.hash;
+      location.replace(newLocation);
+    a(href='./')
+      | You weren't automatically redirected. Enable JavaScript (ECMAScript) and enter
+      | here.
