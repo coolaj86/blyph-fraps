@@ -19,14 +19,14 @@
   },
   "browserDependencies": {
     "json-storage": "*",
+    "serialize-form": "*",
     "md5": "*",
-    "jQuery": "*",
     "jeesh": "*",
     "url": "*",
     "ahr2": "*",
     "join": "*",
     "querystring": "*",
-    "futures": "*",
+    "future": "*",
     "campusbooks": "*",
     "isbn": "*"
   },
