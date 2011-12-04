@@ -5,11 +5,11 @@ body {
   margin:0px;
 }
 #logo {
-  background-image: url('../images/Blyph-Logo.png');
   width: 100px;
-  height: 10px;
+  height: 30px;
   background-repeat: no-repeat;
   visibility: visible;
+  float:left;
 }
 li {
   margin: opx;
@@ -134,7 +134,7 @@ a.text_right {
 	padding:5px;
 	color:#fff;
 }
-#wrapper {
+#show-first {
   width:auto;
   min-height: 500px;
   height: auto;
@@ -142,9 +142,15 @@ a.text_right {
   background-color: #F8F8F8;
   border: 2px solid  #E3E3E3;
   border-radius: 0px;
-  /*Firefox*/
-
-  -moz-border-radius: 5px;
+}
+#wrapper {
+  display:none;
+  width:auto;
+  min-height: 500px;
+  height: auto;
+  margin: 0px auto 0px auto;
+  background-color: #F8F8F8;
+  border: 2px solid  #E3E3E3;
 }
 #instruction_heading {
   background:#444;
@@ -155,12 +161,13 @@ a.text_right {
 }
 #description-title {
   background:#444;
-	width:auto;
-	height:35px;
-	margin:0px 0px 0px 110px;
+	width:300px;
+	height:20px;
+	margin:0px 0px 0px 0px;
 	padding:5px;
 	color:#fff;
 	font-family: 'Didact Gothic', serif;
+	float:left;
 }
 #instruction_heading li {
   margin: 0px 3px 0px 2px;
@@ -265,6 +272,14 @@ a.text_right {
 #Search_tips a {
   font-size: 14px;
 }
+#media_frame{
+	width:640px;
+	height:390px;
+	margin:0px auto 5px auto;
+	border:solid #CCC 0px;
+	background-color:#000;
+	color:#FFF;
+}
 #column1 {
   width: 260px;
   border-right: solid 1px #CCC;
@@ -317,11 +332,10 @@ a.text_right {
   display: inline-block;
 }
 #footer {
-  width: 1200px;
+  width:auto;
   height: 100px;
   background-color: #F8F8F8;
   border-top: solid #E3E3E3 1px;
-  opacity: 0.5;
   text-align: center;
   margin: 0px auto 0px auto;
 }
@@ -705,6 +719,7 @@ hr {
   position:absolute;
   width:255px;
   color:#666;
+  margin:0px 0px 0px 0px;
 }
 #social-sharing {
   color: #8CC63F;
@@ -1043,4 +1058,9 @@ header.booklist_keep {
   line-height: 1.2;
   padding-bottom: 2px;
 }
-
+#optional-info {
+  display:none;
+}
+#login-area{
+  margin:0px 0px 0px 5px;
+}

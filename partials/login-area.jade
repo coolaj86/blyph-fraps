@@ -6,8 +6,10 @@
       input.form_field(type='text', name='email', value='email address', width='500px')
     div
       | School URL:
-      input.form_field(type='text', name='school', value='byu.edu', width='500px')
+      input.form_field(type='text', name='school', value='byu.edu', width='500px') 
+      input.button(type='submit', name='submit', value='Signup / Login')
     br
+  #optional-info  
     | Add / Update Optional Info:
     br
     div
@@ -20,6 +22,7 @@
     | Allow others to see my contact info
     div
       input.button(type='submit', name='submit', value='Signup / Login')
+  
   a#gvoice(href='#gvoiceWidget') Have Questions? Need Help?
   #gvoiceWidget(style='display: none;')
     | Call AJ:
