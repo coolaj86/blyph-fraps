@@ -22,6 +22,7 @@
     "serialize-form": "*",
     "md5": "*",
     "jeesh": "*",
+    "qwery": "0.3.x",
     "url": "*",
     "ahr2": "*",
     "join": "*",

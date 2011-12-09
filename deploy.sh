@@ -16,6 +16,13 @@ fi
 
 lessc style.less > style.css
 jade *.jade
+
+# hack for byId issues
+if [ ! -f "node_modules/qwery/qwery.rvagg.js" ]
+then
+  wget https://raw.github.com/rvagg/qwery/byId/src/qwery.js -O node_modules/qwery/qwery.rvagg.js
+  cp node_modules/qwery/qwery.rvagg.js node_modules/qwery/qwery.js
+fi
 pakmanager build
 cat pakmanaged.js > pakmanaged.tmp.js
 echo 'window.FormData = window.FormData || function FormData() {};' >> pakmanaged.js
