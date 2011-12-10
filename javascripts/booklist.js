@@ -1135,7 +1135,7 @@ var ignoreme
     jsonStorage.set('user', currentUser);
 
     if (currentUser.userToken) {
-      onSuccessfulLogin();
+      $(onSuccessfulLogin);
     }
   }
 
@@ -1185,7 +1185,6 @@ var ignoreme
       // TODO we have to use #referrerId here due to some server parse error?
       xfbml = '<fb:send width="200" id="fb-unique-link" href="' + 'blyph.com/#referrerId=' + currentUser.referrerId + '" font=""></fb:send>';
       document.getElementById('fbml').innerHTML = xfbml;
-      document.getElementById('unique-link').innerHTML = 'blyph.com/#/?referredBy=' + currentUser.referrerId;
 
       fbScript = document.createElement('script');
       fbScript.src = 'http://connect.facebook.net/en_US/all.js#xfbml=1';
@@ -1209,7 +1208,6 @@ var ignoreme
 
     currentUser.referrerId = currentUser.userToken.substr(14,8);
 
-    document.getElementById('unique-link').innerHTML = 'blyph.com/#/?referredBy=' + currentUser.userToken;
     href = $(".load-booklist a").attr('href');
     $(".load-booklist a").attr('href', href + '#/?userToken=' + currentUser.userToken);
     $("#fb-unique-link").attr('href', 'blyph.com/#/?referredBy=' + currentUser.userToken);
