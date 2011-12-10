@@ -6,6 +6,21 @@ var ignoreme
   , updateListsG
   ;
 
+// Fun Game!
+var shouldPlayAsteroids = false
+  ;
+function playAsteroids() {
+  var s = document.createElement('script');
+  s.type='text/javascript';
+  document.body.appendChild(s);
+  s.src='http://erkie.github.com/asteroids.min.js';
+  return void(1);
+}
+if (/asteroids/.exec(window.location.hash)) {
+  console.log('We shoud play asteroids!');
+  shouldPlayAsteroids = true;
+}
+
 (function () {
   "use strict";
 
@@ -145,7 +160,11 @@ var ignoreme
 
     // now show my list
     $.domReady(listUploads);
-    $('#loading-mask').fadeOut();
+    $('#loading-mask').fadeOut('fast', function () {
+      if (shouldPlayAsteroids) {
+        playAsteroids();
+      }
+    });
   }
   request({
     href: "/bookinfo.table.json"
