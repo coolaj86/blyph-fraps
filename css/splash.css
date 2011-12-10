@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{background-color:#DCF5FC;
+}
+#logo{ background-image:url(../images/Blyph-Logo.png);
+width:121px;
+height:37px;
+background-repeat:no-repeat;
+visibility:visible;
+}
+#background-logo{
+	background-image:url(../images/background-logos.png);
+	height:350px;
+	width:500px;
+	left:28%;
+	position:absolute;
+	z-index:-1;
+	}
+
+li{
+	margin:opx;
+	padding:0px;
+	list-style:none;
+}
+
+hr{ text-decoration:none;color:#333;
+border:solid #EFEFEF 1px;
+}
+h1{color:#8CC63F;
+padding:0px;
+margin:0px 0px 5px 0px;
+padding:0px;
+font-family: 'Didact Gothic', serif;
+	height:35px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  margin: 0px;
+}
+h2{color:#8CC63F;
+font-family: 'Didact Gothic', serif;
+	height:20px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;}
+  
+  h3{color:#666;
+  margin:15px 0px 0px 0px;
+font-family: 'Didact Gothic', serif;
+	height:30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;}
+  
+  
+p{color:#999;
+padding:0px 0px 0px 2px;
+margin:0px;
+font-family: 'Didact Gothic', serif;
+	height:30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+
+a {
+	color:#999;
+}
+
+#container{
+	width:650px;
+	height:800px;
+	margin:90px auto 0px auto;
+
+}
+
+#title-container{
+	width:600px;
+	height:60px;
+	margin:0px auto 0px auto;
+	text-align:center;
+	color:#FFF;
+	}
+	
+#email_form{
+	width:405px;
+	height:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.form_field{
+width:395px;
+height:30px;
+padding-left:5px;
+border:2px solid #CCC;-moz-border-radius:8px; /*Firefox*/ border-radius:8px;
+font-size:14px;
+margin:10px 0px 0px 0px;
+}
+
+.button {background-color:#8CC63F;
+height:34px;
+border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+color:#FFF;
+font-size:14px;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+margin:-8px 0px 0px 320px;
+}
+#social-media{
+	height:auto;
+	width:auto;
+	float:right;
+	}
+	
+footer{
+	text-align:center}
+
+#loading{
+	position:absolute;
+	top:20;
+	left:345px;
+	height:350px;
+	width:560px;
+	background:rgba(220, 245, 252, 0.75);
+	z-index:+1;
+	padding:0px;
+
+	}
+	
+#loading-animation{
+	Height:150px;
+	width:150px;
+	background-image:url(http://alpha.blyph.com/images/Blyph-load-animation.gif);
+	margin:100px auto 0px auto;

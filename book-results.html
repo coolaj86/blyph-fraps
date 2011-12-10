@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Blyph</title>
+
+<script src="./javascripts/CFInstall.min.js"></script>
+<script src="./javascripts/jquery.min.js"></script>
+<script src="./javascripts/jquery.jgrowl.js"></script>
+<script src="http://cdn.coolaj86.info/js/require-kiss.js"></script>
+<script src="./javascripts/app.js"></script>
+ 
+
+
+<link rel="stylesheet" href="http://stanlemon.net/stylesheet/jquery.jgrowl.css" type="text/css" />
+
+
+<link href="css/book-results.css" rel="stylesheet" type="text/css"/>
+<link href="css/item.css" rel="stylesheet" type="text/css"/>
+<link href="css/change_item.css" rel="stylesheet" type="text/css" />
+<link href="css/booklist.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="form_change_item.css" type="text/css" />
+
+
+</head>
+
+<body>
+<div id="logo"></div>  
+    <div id="instruction_heading">
+	<div id="menu">
+    <li id="menu_step_1"><a href="help.html">Tell us what books you have</a></li>
+    <li id="menu_step_2"><a href="http://www/gmail.com">Tell us what books you need</a></li>
+    <li id="menu_step_3"><a href="http://www/gmail.com">We'll set up a swap</a></li>
+    </div><!--menu-->
+    </div><!--instructional_heading--> 
+    
+<div id="background_frame">
+	<div id="main_area">
+			<h1>Start Trading</h1>
+				<div id="searchbar">
+                <form id="search_form">
+                <input name="search" type="text" id="search"/></form>
+                
+            		<input type="image" img src="Search-icon.png" height"35" width="35" align="right"/>
+                </form><!--search_form-->
+    			</div><!--searchbar-->
+            
+    			<div id="Search_tips">
+            		<a href="help.html" class="text_left">Didn't find your book?</a>
+            		<a href="help.html"class="text_right">Search multiple books at the same time</a>
+    			</div>
+    </div>
+     
+     <form><!--MyBooks-->
+     <ul>
+     <li><input name type="text" class="booklist_title" value="My Books"/></li>
+     <li><input name type="text"  class="booklist" value="book name here"/></li>
+     <li><input name type="text"  class="booklist" value="book name here"/></li>
+     <li><input name type="text"  class="booklist" value="book name here"/></li>
+     </ul>
+     </form><!--EndMyBooks-->
+     <form><!--MyBooks-->
+     <ul>
+     <li><input name type="text" class="booklist_title" value="Books I need"/></li>
+     <li><input name type="text"  class="booklist" value="book name here"/></li>
+     <li><input name type="text"  class="booklist" value="book name here"/></li>
+     <li><input name type="text"  class="booklist" value="book name here"/></li>
+     </ul>
+     </form><!--EndMyBooks-->
+     
+  <hr /><!--page break-->
+
+<div id="item_list">  
+<div class="item">
+	<div class="image_frame">
+    <div class="item_picture"><img src="css/default-book.jpg"/>
+    </div><!--item_picture-->
+	</div><!--image_frame-->
+    <div class="item_info">
+    	<div class="title">
+        <li>Book Name</li>
+        </div><!--item_info-->
+        
+	
+  		<div class="isbn">
+    
+        	<li>
+        	<div class="isbn_10">
+        	Isbn10:1234567890
+        	</div><!--isbn_10-->
+       		</li>
+        
+        	<li>
+        	<div class="isbn_13">
+        	Isbn13:1234567890123
+       		</div><!--isbn_13-->
+       		</li>
+       	</div><!--isbn-->
+        
+        <div class="edition">
+        	<li>International 3rd</li>
+        </div><!--edition-->
+        
+    	<div class="authors">
+        <li>Gray Bot, willhelm, Conto,</li>
+        </div><!--authors-->
+	<div class="school_course">Class</div>
+    <div class="teacher">Teacher</div>
+    <div class="school">byu.edu</div>
+    </div><!--item_info-->
+</div><!--item-->
+</div><!--item_list-->
+
+<!--Change item-->
+<div class="change_item_form">
+<form>
+<li>&nbsp;&nbsp;Do you want to update any information?</li>
+	<div class="change_item">
+	    <div class="item_picture">
+		<div class="item_info">
+    		
+            <input name="title" div class="title" type="text" value="book name here"/>
+            
+    	<div class="isbn">
+    		<input name="isbn10"  div class="isbn_10" type="text" value="isbn_10" />
+        	<input name="isbn13" div class="isbn_13" type="text" value="isbn13 here!" />
+    	</div><!--isbn-->
+        
+        	<input name="edition" div class="edition" type="text" value="edition"/>
+      
+    	
+        	<input name="authors" type="text" div class="authors" value="author names here" />
+    
+    	</div><!--item_info-->
+      
+	</div><!--change_item-->
+</div><!--item_container-->
+<input name="list book" type="submit" value="list book" class="button"/>
+</form><!--Change Item-->
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

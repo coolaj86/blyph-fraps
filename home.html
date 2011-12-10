@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Blyph</title>
+
+<script src="./javascripts/CFInstall.min.js"></script>
+<script src="./javascripts/jquery.min.js"></script>
+<script src="./javascripts/jquery.jgrowl.js"></script>
+<script src="http://cdn.coolaj86.info/js/require-kiss.js"></script>
+<script src="./javascripts/app.js"></script>
+ 
+
+
+<link rel="stylesheet" href="http://stanlemon.net/stylesheet/jquery.jgrowl.css" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link href="css/item.css" rel="stylesheet" type="text/css"/>
+<link href="css/change_item.css" rel="stylesheet" type="text/css" />
+<link href="css/booklist.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/form_change_item.css" type="text/css" />   
+<link  href="http://fonts.googleapis.com/css?family=Nunito:300,400,700&v1" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Bevan:regular&v1" rel="stylesheet" type="text/css" >
+<link  href="http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1" rel="stylesheet" type="text/css" >
+
+</head>
+
+<body>
+<div id="logo"></div>  
+
+    <div id="instruction_heading">
+    <li id="menu_step_1"><a href="help.html">Tell us what books you have</a></li>
+    <li id="menu_step_2"><a href="http://www/gmail.com">Tell us what books you need</a></li>
+    <li id="menu_step_3"><a href="http://www/gmail.com">We'll set up a swap</a></li>
+    </div><!--instructional_heading--> 
+    
+
+   <div style="clear:both;"></div> 
+
+<div id="wrapper">
+    <div id="content">
+    	<div id="column1">
+        <div id="searchbar-small">
+                <form id="search_form_small">
+                <input name="search-small" type="text" id="search-small"/></form>
+                
+            		<input type="image" img src="images/blyph-search-icon.png" height"25" width="25" align="right"/>
+                </form><!--search_form-->
+    			</div><!--searchbar-small-->
+                
+                
+        
+         <form><!--MyBooks-->
+     
+     <li><input name type="text" class="booklist_need" value="&nbsp;Books I need"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+    
+     </form><!--EndMyBooks-->
+        
+        <form><!--MyBooks-->
+     
+     <li><input name type="text" class="booklist_have" value="&nbsp;Books I have"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+     </form><!--EndMyBooks-->
+             
+       
+     
+	</div><!--column1-->   
+   
+    
+    <div id="column2">
+    <div id="searchbar">
+                <form id="search_form">
+                <input name="search" type="text" id="search"/></form>
+                
+            		<input type="image" img src="images/Search-icon.png" height"35" width="35" align="right"/>
+                </form><!--search_form-->
+    			</div><!--searchbar-->
+            
+    			<div id="Search_tips">
+            		<a href="help.html" class="text_left">Didn't find your book?</a>
+            		<a href="help.html"class="text_right">Search multiple books at the same time</a>
+    			</div>
+   
+    <!--Results-->
+    <div id="item_list">  
+<div class="item">
+	<div class="image_frame">
+    <div class="item_picture"><img src="css/default-book.jpg"/>
+    </div><!--item_picture-->
+	</div><!--image_frame-->
+    <div class="item_info">
+    	<div class="title">
+        <li>Book Name</li>
+        </div><!--item_info-->
+        
+	
+  		<div class="isbn">
+    
+        	<li>
+        	<div class="isbn_10">
+        	Isbn10:1234567890
+        	</div><!--isbn_10-->
+       		</li>
+        
+        	<li>
+        	<div class="isbn_13">
+        	Isbn13:1234567890123
+       		</div><!--isbn_13-->
+       		</li>
+       	</div><!--isbn-->
+        
+        <div class="edition">
+        	<li>International 3rd</li>
+        </div><!--edition-->
+        
+    	<div class="authors">
+        <li>Gray Bot, willhelm, Conto,</li>
+        </div><!--authors-->
+	<div class="school_course">Class</div>
+    <div class="teacher">Teacher</div>
+    <div class="school">byu.edu</div>
+    <div class="need-it-button"> Need it</div>
+<div class="have-it-button">Have it</div>  
+    </div><!--item_info-->
+</div><!--item-->
+</div><!--item_list-->
+
+
+ 
+   
+   <div class="title_box"><h4>local Books</h4></div>
+   <div class="result_box">
+   <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="friend-match-item"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+     
+     <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     
+     <li>.02 mi</li>
+     </ul>
+     
+     
+   </div><!--sidebar_box-->
+   
+   <div class="result_box">
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="friend-match-item"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+     
+     <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+    
+    <ul>
+    <li class="match-item">
+    	<ul>
+        <li class="item-photo-small"></li>
+        <li class="match-description"></li>
+        </ul>
+     </li>
+     </ul>
+     <li>5 mi</li>
+   </div><!--sidebar_box-->
+                  
+    
+    
+    
+    <div class="title_box"><h4>Internet Books</h4></div>
+    <div class="sidebar_box">
+    </div><!--sidebar_box-->
+    
+    </div><!--column2-->
+   
+   
+<div id="column3">
+    <div id="result-info-box">
+    
+    	<div class="item-photo-med"> hello </div>
+        <div class="item-photo-med"> hello </div>
+        <div class="need-it-button">add to cart +</div>
+    </div><!--result-info-box-->
+    
+<form><!--MyBooks-->
+     
+      <li><input name type="text" class="booklist_need" value="&nbsp;Cart"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;Swap | Biology consepts 4th ed<-->History"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input name type="text"  class="booklist-item" value="&nbsp;book name here"/></li>
+      <li><input type="submit" class="need-it-button" value="Check out" onClick="submit"/></li>
+     </form><!--MyBooks-->
+    
+    </div><!--column3-->
+    
+    
+    <div style="clear:both;"></div> 
+    
+    
+
+
+
+	
+    
+
+
+    <div id="footer">
+    
+    <p>&copy;Blyph 2011</p>
+    </div><!--footer-->
+    
+</div><!--wrapper-->
+
+</body>
+
+</html>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{background-color:#DCF5FC;
+}
+#logo{ background-image:url(http://alpha.blyph.com/images/Blyph-Logo.png);
+width:121px;
+height:37px;
+background-repeat:no-repeat;
+visibility:visible;
+}
+#background-logo{
+	background-image:url(http://alpha.blyph.com/images/background-logos.png);
+	height:350px;
+	width:500px;
+	left:350px;
+	position:absolute;
+	z-index:-1;
+	}
+	
+li{
+	margin:opx;
+	padding:0px;
+	list-style-type:none;
+}
+
+hr{ text-decoration:none;color:#333;
+border:solid #EFEFEF 1px;
+}
+h1{color:#8CC63F;
+font-family: 'Didact Gothic', serif;
+	height:35px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  margin:0px 0px 10px 0px;
+}
+h2{color:#8CC63F;
+font-family: 'Didact Gothic', serif;
+	height:20px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  padding:0px;}
+  
+h3{color:#666;
+font-family: 'Didact Gothic', serif;
+	height:30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  margin:20px 0px 10px 0px;
+  padding:0px 0px 10px 5px;}
+  
+p{color:#999;
+font-family: 'Didact Gothic', serif;
+	height:30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+   margin:10px 0px 5px 0px;
+   padding:0px;
+}
+
+a {
+	text-decoration:;
+	font-size:16px;
+}
+
+#container{
+	width:740px;
+	height:auto;
+	margin:50px auto 0px auto;
+	background:#FFF;
+	padding:10px 30px 10px 30px;
+	color:#666;
+
+}
+
+#social-media{
+	height:auto;
+	width:auto;
+	float:right;
+	}
+#text-area{
+	width:700px;
+	height:20px;
+	border:solid #CCC 2px;
+	margin-top:10px;
+	
+	}
+	
+.screenshot1{
+	background-image:url(http://alpha.bylph.com/images/uvu-1.png);
+	height:200px;
+	width:350px;
+	background-repeat:no-repeat;
+	margin:10px 0px 10px 0px;
+	border:solid 2px #CCC;
+	}
+.screenshot2{
+background-image:url(http://alpha.bylph.com/images/uvu-2.png);
+	height:75px;
+	width:400px;
+	background-repeat:no-repeat;
+	margin:10px 0px 10px 0px;
+	border:solid 2px #CCC;
+	}
+.screenshot3{
+background-image:url(http://alpha.bylph.com/images/uvu-3.png);
+	height:128px;
+	width:400px;
+	background-repeat:no-repeat;
+	margin:10px 0px 10px 0px;
+	border:solid 2px #CCC;
+	}
+#loading-animation{Height:150px;
+width:150px;
+background-image:url(http://alpha.blyph.com/images/Blyph-load-animation.gif);
+margin:20px 0px 10px 0px;
+	
+}
+#loading-container{
+	height:auto;
+	width:150px;
+	margin:20px auto 0px auto;
+	}
+#container2{
+	width:500px;
+	height:auto;
+	margin:50px auto 0px auto;
+	background:#FFF;
+	padding:10px 30px 10px 30px;
+	text-align:center;}
+#progress-bar{
+	margin:10px 0px 0px 0px;
+	width:150px;}
+		
+#thank-you-container
+{width:550px;
+height:auto;
+background-color:#fff;
+margin:50px auto 0px auto;
+padding:10px;}

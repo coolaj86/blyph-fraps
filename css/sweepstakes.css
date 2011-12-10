@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{background-color:#DCF5FC;
+}
+#logo{ background-image:url(../images/Blyph-Logo.png);
+width:121px;
+height:37px;
+background-repeat:no-repeat;
+visibility:visible;
+}
+#background-logo{
+	background-image:url(../../images/background-logos.png);
+	height:350px;
+	width:500px;
+	left:350px;
+	position:absolute;
+	z-index:-1;
+	}
+	
+li{
+	margin:opx;
+	padding:0px;
+	list-style-type:none;
+}
+
+hr{ text-decoration:none;color:#333;
+border:solid #EFEFEF 1px;
+}
+h1{color:#8CC63F;
+font-family: 'Didact Gothic', serif;
+	height:35px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+h2{color:#8CC63F;
+font-family: 'Didact Gothic', serif;
+	height:20px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  margin:0px;
+  padding:0px;}
+  
+h3{color:#666;
+font-family: 'Didact Gothic', serif;
+	height:30px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  margin:20px 0px 0px 15px;
+  padding:0px;}
+  
+p{color:#999;
+font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+   margin:10px 0px 5px 15px;
+   padding:0px;
+}
+
+a {
+	text-decoration:;
+	font-size:12px;
+	color:#999;
+}
+
+#container{
+	width:740px;
+	height:auto;
+	margin:50px auto 0px auto;
+	background:#FFF;
+	padding:10px 30px 10px 30px;
+
+}
+
+#social-media{
+	height:auto;
+	width:auto;
+	float:right;
+	}
