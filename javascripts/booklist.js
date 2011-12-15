@@ -1410,7 +1410,7 @@ if (/asteroids/.exec(window.location.hash)) {
         }
 
         if (!/(byu|uvu).edu$/.exec(echo.couchdb.school)) {
-          alert("Currently we only support BYU, but UVU, USU, and UofU are close behind!");
+          alert("Currently we only support BYU, and UVU, but USU, and UofU are close behind!");
         } else {
           $('#import-prompt').show();
         }
