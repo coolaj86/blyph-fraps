@@ -1,7 +1,7 @@
-Blyph Browser Client
+Braps (Client)
 ===
 
-This is the application which is loaded into your browser from [Blyph.com](http://blyph.com).
+This is the application which is loaded into your browser for the fraps.
 
 Contributing
 ===
@@ -24,11 +24,11 @@ Contributing
           spark \
           less
 
-3. Install and Test Blyph
+3. Install and Test Fraps
 
-        git clone git://github.com/Blyph/blyph.com
-        # For Developers: git clone git@github.com:Blyph/blyph.com
-        cd blyph.com
+        git clone git://github.com/Blyph/fraps
+        # For Developers: git clone git@github.com:Blyph/fraps
+        cd fraps
         ./deploy.sh
         served 3200
         open "http://localhost:3200"
