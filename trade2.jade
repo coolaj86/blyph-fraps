@@ -1,0 +1,83 @@
+!!! 5
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Blyph
+    link(href='css/main.css', rel='stylesheet', type='text/css')
+    link(href='css/trade.css', rel='stylesheet', type='text/css')
+    link(href='css/booklist.css', rel='stylesheet', type='text/css')
+    script(src='./javascripts/CFInstall.min.js')
+    script(src='./javascripts/jquery.min.js')
+    script(src='./javascripts/jquery.jgrowl.js')
+    script(src='http://cdn.coolaj86.info/js/require-kiss.js')
+    script(src='./javascripts/app.js')
+    link(rel='stylesheet', href='http://stanlemon.net/stylesheet/jquery.jgrowl.css', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Nunito:300,400,700&v1', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Bevan:regular&v1', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
+  body
+    #logo
+    #instruction_heading
+      ul
+        li#menu_step_1
+          a(href='help.html') Tell us what books you have
+        li#menu_step_2
+          a(href='http://www/gmail.com') Tell us what books you need
+        li#menu_step_3
+          a(href='http://www/gmail.com') We'll set up a swap
+    // instructional_heading
+    div(style='clear: both;')
+    #wrapper
+      #content
+        #column1
+          ul
+            li.booklist_need  Books I need
+            li.booklist-item   book name here
+            li.booklist_have   Books I have
+            li.booklist-item  book name here
+            li.booklist_keep   Keeping
+            li.booklist-item  book name here
+        // column1
+        #column2
+          #item_list
+            .trade_item_container
+              .activate
+              .deactivate
+              .trade_item
+                .trade_image_frame  
+                // trade_image_frame
+                .trade_title The best book ever
+                // trade_title
+                .add-remove-item-container
+                  ul
+                    li  Remove 
+                // add-remove-item-container
+                .price-container
+                  ul
+                    li  $ 85.00 
+                // price-container
+              // isbn
+              div(style='clear: both;')
+            // trade_item_container
+            .trade-arrow
+              img(src='images/trade-arrow.png')
+            hr
+            ul
+              li  Total: 
+            // total numbers
+            .total-price-container
+              ul
+                li  + $5.00 
+            // total-price-container
+          // item_list
+          ul.textbox-title
+            li Send a message when would be the best time to meet and trade?
+          textarea.message-box(name='message', type='text', maxlength='600')
+          ul
+            li Use common judgement when trading. Go to public places, and bring friends along.
+          .button-want Trade
+        // column2
+        #column3  
+        // column3
+        div(style='clear: both;')
+      // wrapper

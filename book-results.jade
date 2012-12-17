@@ -1,0 +1,118 @@
+!!! transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Blyph
+    script(src='./javascripts/CFInstall.min.js')
+    script(src='./javascripts/jquery.min.js')
+    script(src='./javascripts/jquery.jgrowl.js')
+    script(src='http://cdn.coolaj86.info/js/require-kiss.js')
+    script(src='./javascripts/app.js')
+    link(rel='stylesheet', href='http://stanlemon.net/stylesheet/jquery.jgrowl.css', type='text/css')
+    link(href='css/book-results.css', rel='stylesheet', type='text/css')
+    link(href='css/item.css', rel='stylesheet', type='text/css')
+    link(href='css/change_item.css', rel='stylesheet', type='text/css')
+    link(href='css/booklist.css', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='form_change_item.css', type='text/css')
+  body
+    #logo
+    #instruction_heading
+      #menu
+        li#menu_step_1
+          a(href='help.html') Tell us what books you have
+        li#menu_step_2
+          a(href='http://www/gmail.com') Tell us what books you need
+        li#menu_step_3
+          a(href='http://www/gmail.com') We'll set up a swap
+      // menu
+    // instructional_heading
+    #background_frame
+      #main_area
+        h1 Start Trading
+        #searchbar
+          form#search_form
+            input#search(name='search', type='text')
+          input(35='35', type='image', img='img', src='Search-icon.png', height='height', width='35', align='right')
+          // search_form
+        // searchbar
+        #Search_tips
+          a.text_left(href='help.html') Didn't find your book?
+          a.text_right(href='help.html') Search multiple books at the same time
+      form
+        // MyBooks
+        ul
+          li
+            input.booklist_title(name='name', type='text', value='My Books')
+          li
+            input.booklist(name='name', type='text', value='book name here')
+          li
+            input.booklist(name='name', type='text', value='book name here')
+          li
+            input.booklist(name='name', type='text', value='book name here')
+      // EndMyBooks
+      form
+        // MyBooks
+        ul
+          li
+            input.booklist_title(name='name', type='text', value='Books I need')
+          li
+            input.booklist(name='name', type='text', value='book name here')
+          li
+            input.booklist(name='name', type='text', value='book name here')
+          li
+            input.booklist(name='name', type='text', value='book name here')
+      // EndMyBooks
+      hr
+      // page break
+      #item_list
+        .item
+          .image_frame
+            .item_picture
+              img(src='css/default-book.jpg')
+            // item_picture
+          // image_frame
+          .item_info
+            .title
+              li Book Name
+            // item_info
+            .isbn
+              li
+                .isbn_10
+                  | Isbn10:1234567890
+                // isbn_10
+              li
+                .isbn_13
+                  | Isbn13:1234567890123
+                // isbn_13
+            // isbn
+            .edition
+              li International 3rd
+            // edition
+            .authors
+              li Gray Bot, willhelm, Conto,
+            // authors
+            .school_course Class
+            .teacher Teacher
+            .school byu.edu
+          // item_info
+        // item
+      // item_list
+      // Change item
+      .change_item_form
+        form
+          li   Do you want to update any information?
+          .change_item
+            .item_picture
+              .item_info
+                input.title(name='title', div='div', type='text', value='book name here')
+                .isbn
+                  input.isbn_10(name='isbn10', div='div', type='text', value='isbn_10')
+                  input.isbn_13(name='isbn13', div='div', type='text', value='isbn13 here!')
+                // isbn
+                input.edition(name='edition', div='div', type='text', value='edition')
+                input.authors(name='authors', type='text', div='div', value='author names here')
+              // item_info
+            // change_item
+          // item_container
+          input.button(name='list book', type='submit', value='list book')
+        // Change Item

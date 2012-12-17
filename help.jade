@@ -1,0 +1,82 @@
+!!! 5
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Untitled Document
+  body
+    html
+      head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Blyph
+        link(href='css/main.css', rel='stylesheet', type='text/css')
+      body
+        #logo
+        #instruction_heading
+          li#menu_step_1
+            a(href='help.html') Tell us what books you have
+          li#menu_step_2
+            a(href='http://www/gmail.com') Tell us what books you need
+          li#menu_step_3
+            a(href='http://www/gmail.com') We'll set up a swap
+        // instructional_heading
+        div(style='clear: both;')
+        #wrapper
+          #content
+            #column1
+              #searchbar-small
+                form#search_form_small
+                  input#search-small(name='search-small', type='text')
+                input(25='25', type='image', img='img', src='images/blyph-search-icon.png', height='height', width='25', align='right')
+                // search_form
+              // searchbar-small
+            // column1
+            #column2
+              #searchbar
+                form#search_form
+                  input#search(name='search', type='text')
+                input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
+                // search_form
+              // searchbar
+              #Search_tips
+                a.text_left(href='help.html') Didn't find your book?
+                a.text_right(href='help.html') Search multiple books at the same time
+            // column2
+            #column3
+              #result-info-box
+                | hi
+              // result-info-box
+              form
+                // MyBooks
+                li
+                  input.booklist_have(name='name', type='text', value=' Books I need')
+                li
+                  input.booklist-even(name='name', type='text', value=' book name here')
+                li
+                  input.booklist-odd(name='name', type='text', value=' book name here')
+                li
+                  input.booklist-even(name='name', type='text', value=' book name here')
+                li
+                  input.booklist-odd(name='name', type='text', value=' book name here')
+              // EndMyBooks
+              form
+                // MyBooks
+                li
+                  input.booklist_need(name='name', type='text', value=' Books I have')
+                li
+                  input.booklist-even(name='name', type='text', value=' book name here')
+                li
+                  input.booklist-odd(name='name', type='text', value=' book name here')
+                li
+                  input.booklist-even(name='name', type='text', value=' book name here')
+                li
+                  input.booklist-odd(name='name', type='text', value=' book name here')
+              // EndMyBooks
+            // sidebar_box
+          // column3
+          div(style='clear: both;')
+          #footer
+            p
+              a(href='file:///Macintosh HD/Users/brianturley/Sites/company.html') Contact us
+            p ©Blyph 2011
+          // footer
+        // wrapper

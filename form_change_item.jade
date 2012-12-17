@@ -1,0 +1,25 @@
+!!! transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Untitled Document
+  link(rel='stylesheet', href='form_change_item.css', type='text/css')
+  body
+    .change_item_form
+      form
+        li Do you want to update andy information?
+        .change_item
+          .item_picture
+            .item_info
+              input.title(name='title', div='div', type='text', value='book name here')
+              .isbn
+                input.isbn_10(name='isbn10', div='div', type='text', value='isbn_10')
+                input.isbn_13(name='isbn13', div='div', type='text', value='isbn13 here!')
+              // isbn
+              input.edition(name='edition', div='div', type='text', value='edition')
+              input.authors(name='authors', type='text', div='div', value='author names here')
+            // item_info
+          // change_item
+        // item_container
+        input.button(name='list book', type='submit', value='list book')
+      // Change Item

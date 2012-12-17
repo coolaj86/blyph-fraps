@@ -1,0 +1,34 @@
+!!! 5
+html
+  head
+    title How to load your booklist from BYU.
+    link(href='css/listbooks-uvu.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
+  body
+    #logo
+    #container
+      h1 Upload your booklist
+      ol
+        li
+          h2 (1) Login to UVU:
+          a(href='https://uvlink.uvu.edu/cp/home/displaylogin', target='_blank') uvlink.uvu.edu/cp/home/displaylogin
+        a(href='https://uvlink.uvu.edu/cp/home/displaylogin', target='_blank')
+          .screenshot1
+        h2 (2) Copy this text
+        textarea#text-area
+          | javascript:window.s=document.createElement('script');window.sc=document.getElementsByTagName("body")[0]||document.getElementsByTagName("head")[0];s.src="http://alpha.blyph.com/booklist/uvu.js";sc.appendChild(s)
+        li
+          h2 (3) Click this link to the UVU bookmatch
+        li
+          a(href='https://uvlink.uvu.edu/cp/ip/login?sys=gencpip&url=https%3A%2F%2Fuvu.edu%2Fbookstore%2Fbookmatch.php%3FconnId%3Dplace', target='_blank') UVU bookmatch
+        li (you must use this special link)
+        li * You may need to agree to the terms and conditions
+        li
+          h2 (4) Clear the URL bar
+        li.screenshot2
+        h2 (5) Paste the text you copied into the URL bar
+        li.screenshot3
+        h2 (5) hit Enter
+        li your books for the semester will automatically load.
+        ol
+    // container

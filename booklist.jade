@@ -1,0 +1,19 @@
+!!! 5
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Blyph.com
+    // purposefully pre-cache these local-ish resources now
+    link(href='./css/main.css', rel='stylesheet', type='text/css')
+    link(href='./css/item.css', rel='stylesheet', type='text/css')
+    link(href='./css/booklist.css', rel='stylesheet', type='text/css')
+    link(href='./css/results.css', rel='stylesheet', type='text/css')
+    //if IE
+      script(src='./javascripts/CFInstall.min.js')
+    script(src='./javascripts/global-es5.js')
+  body
+    script
+      var newLocation = location.protocol + '//' + location.host + '/' + location.hash;
+      location.replace(newLocation);
+    a(href='./')
+      | You weren't automatically redirected. Enable JavaScript (ECMAScript) and enter here.
