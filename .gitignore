@@ -1,1 +1,8 @@
 *.gz
+node_modules
+*.html
+pakmanaged.*
+*.css
+*.appcache
+*.manifest
+*.min.*
