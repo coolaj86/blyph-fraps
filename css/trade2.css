@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* CSS Document */
+ul{list-style-type:none;
+	margin:0px;
+	padding:0px;
+	}
+
+li{list-style-type:none;
+	margin:opx;
+	padding:0px;}
+
+hr {
+	text-decoration:none;color:#333;
+	border:solid #EFEFEF 1px;
+	margin:0px;
+}
+
+#item_list{
+	text-align:left;
+}
+.trade_item_container{
+width:144px;
+height:auto;
+margin:15px 5px 10px 5px;
+padding:0px;
+float:left;
+}
+.trade_item{
+width:140px;
+height:auto;
+border:2px solid #E3E3E3;
+padding:0px 0px 2px 0px;
+}
+.trade_item p{
+	color:#333;
+	height:10px;
+	margin:1px 0px 0px 10px;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 12px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;
+	  }
+
+
+.trade_image_frame{
+	margin:0px 0px 0px 10px;
+	height:150px;
+	width:120px;
+	border:solid 1px #E3E3E3;
+	background:#FFF;
+	}
+
+
+.trade_item_info{
+	width:380px;
+	height:130px;
+	margin:10px;
+	float:right;
+	border-bottom:#09F;
+	background:#60F;
+	}	
+	
+.trade_title{
+	text-overflow:ellipsis;
+	width:120px;
+	height:20px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	padding-bottom:1px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+  margin:0px 0px 0px 10px}
+
+.trade_title:hover{ 
+background:#fff;
+width:auto;
+}
+.trade_isbn{
+	width:120px;
+	height:auto;
+	margin:0px 0px 0px 10px;	
+}
+
+.isbn_10{
+	width:170px;
+	height:10px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom-color:#666;
+	padding-bottom:1px;
+	margin:1px 0px 3px 0px;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 12px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;}
+	  
+.isbn_13{
+	width:170px;
+	height:10px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom-color:#666;
+	padding-bottom:1px;
+	margin:1px 0px 3px 0px;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 12px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;}
+	  
+
+.edition{
+	width:170px;
+	height:20px;
+	margin:10px 0px 0px 0px;
+	float:right;
+	text-align:center;
+	padding:10px;
+	font-size:20px;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-bottom-color:#666;
+	padding-bottom:1px;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 20px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;
+	
+	}
+.edition:hover{ 
+background:#fff;
+}	
+
+.authors{
+	width:120px;
+	height:15px;
+	margin:0px 0px 0px 10px;
+	padding-bottom:1px;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 14px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;
+}
+.authors:hover{ 
+background:#fff;
+width:auto;
+}
+
+
+.price-container{
+	height:20px;
+	width:auto;
+	float:right;
+	margin:5px 0px 0px 0px;
+	color:#999;
+	text-align:right;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 16px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;
+	}
+
+.subtotal-price-container{
+	height:20px;
+	width:auto;
+	float:right;
+	margin:258px 0px 0px 0px;
+	color:#8CC63F;
+	text-align:right;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 20px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;
+	}	
+.total-price-container{
+	height:20px;
+	width:auto;
+	float:right;
+	margin:0px 0px 30px 0px;
+	color:#8CC63F;
+	text-align:right;
+	font-family: 'Didact Gothic', serif;
+	  font-size: 20px;
+	  font-style: normal;
+	  font-weight: 400;
+	  text-shadow: none;
+	  text-decoration: none;
+	  text-transform: none;
+	  letter-spacing: -0.015em;
+	  word-spacing: 0em;
+	  line-height: 1.2;
+	  list-style:none;
+	}		
+	
+.textbox-title{
+	height:20px;
+	width:auto;
+	background:#C00;
+	margin:20px;
+}
+	
+	
+	
+.add-remove-item-container{
+height:20px;
+width:auto;
+float:left;
+margin:5px 0px 0px 0px;
+color:#999;
+text-decoration:underline;
+cursor:pointer;
+}
+
+.add-remove-item-container:hover{
+color:#333;
+}
+
+.school_course{
+	width:100px;
+	height:20px;
+	background-color:#CCC;
+	float:right;
+	color:#FFF;
+	cursor:pointer;
+	text-align:left;
+	padding:2px 0px 0px 5px;
+	margin:2px 15px 0px 0px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;}
+
+.teacher{width:140px;
+	height:20px;
+	background-color:#CCC;
+	float:right;
+	color:#FFF;
+	cursor:pointer;
+	text-align:left;
+	padding:2px 0px 0px 5px;
+	margin:2px 5px 0px 0px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;}
+  
+.button-want2 {
+	width:100px;
+	height:20px;
+	background-color:#8CC63F;
+	border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+	color:#FFF;
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	padding-top:2px;
+	margin left:5px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+  margin:0px 5px 0px 0px;
+  display:inline-block;
+  float:right;
+}
+.button-list2 {
+	width:100px;
+	height:20px;
+	background-color:#75CAD8;
+	border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+	color:#FFF;
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	padding-top:2px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+  margin:0px 5px 0px 0px;
+  display:inline-block;
+  float:right;
+}
+  
+#list-button-container{
+	width:105px;
+	height:auto;
+	margin:180px 0px 0px 0px;
+	}  
+
+.button-want {
+	width:100px;
+	height:25px;
+	background-color:#8CC63F;
+	border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+	color:#FFF;
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	padding-top:2px;
+	margin left:5px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+  margin:10px 0px 10px 0px;
+  display:inline-block;
+  float:right;
+  
+}
+.button-list {
+	width:100px;
+	height:25px;
+	background-color:#75CAD8;
+	border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+	color:#FFF;
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	padding-top:2px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+  margin:0px 0px 10px 0px;
+  display:inline-block;
+}
+
+.button-keep {
+	width:100px;
+	height:25px;
+	background-color:#999;
+	border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+	color:#FFF;
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	padding-top:2px;
+	margin left:5px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+   margin:0px 0px 10px 0px;
+   display:inline-block;
+}
+
+.button-ignore {
+	width:100px;
+	height:25px;
+	background-color:#666;
+	border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+	color:#FFF;
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	padding-top:2px;
+	margin left:5px;
+	font-family: 'Didact Gothic', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: -0.015em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  list-style:none;
+   margin:0px 0px 10px 0px;
+   display:inline-block;
+}
+
+.trade-arrow{
+	height:auto;
+	width:100px;
+	margin:100px 0px auto 0px;
+	float:left;
+	}
+	
+.message-box{
+height:150px;
+width:650px;
+border:solid 2px #EFEFEF;
+margin:0px 0px 5px 0px;
+	}
+
+

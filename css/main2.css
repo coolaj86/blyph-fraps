@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{background-color:#DCF5FC;
+}
+#logo{ background-image:url(../images/Blyph-Logo.png);
+width:121px;
+height:37px;
+background-repeat:no-repeat;
+visibility:visible;
+}
+
+li{
+	margin:opx;
+	padding:0px;
+}
+
+hr{ text-decoration:none;color:#333;
+border:solid #EFEFEF 1px;
+}
+h1{color:#8CC63F}
+h2{color:#8CC63F}
+h3{color:#8CC63F}
+p{color:#9CCE4D}
+p.text_center{
+	text-align:left;
+	border:0px;
+	margin:0px;
+	float:inherit;
+}
+a {
+	text-decoration:none;
+	color:#8CC63F;
+}
+
+a.text_left{
+	text-align:left;
+	border:0px;
+	margin:0px;
+	float:left;
+}
+
+a.text_right{
+	text-align:right;
+	border:0px;
+	margin:0px;
+	float:right}
+#instruction_heading
+{
+	background:#FFC;
+	Width:700px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	border:solid #FFF586;-moz-border-radius:25px 25px 0px 0px / 25px 25px 0px 0px;
+	border-bottom:0px;
+	padding:10px;
+	position:absolute;
+	top:30px;
+	left:250px;
+	z-index:-1;
+}
+
+#main_area
+{
+	height:150px;
+	width:700px;
+	margin-left:auto;
+	margin-top:inherit;
+	margin-right:auto;
+	margin-bottom:0px;
+	text-align:center;
+	color:#396;
+}
+
+#searchbar
+{background:#FFF;
+width:645px;
+height:35px;
+border:5px solid #CCC;-moz-border-radius:10px; /*Firefox*/ border-radius:10px;
+margin:2px auto 0px auto;
+float:inherent;
+padding:5px;
+}
+#search
+{background:#FFF;
+width:600px;
+height:30px;
+float:left;
+border:none;
+font-size:24px;
+}
+#search:focus{
+	outline-width:0;
+}
+#Search_tips
+{
+width:650px;
+height:25px;
+padding:5px;
+border:0px;
+margin-left:auto;
+margin-right:auto;
+text-align:justify;
+}
+#menu{
+	float:left;
+	display:inline;
+	color:#8CC63F
+}
+#menu_step_1{
+	list-style-image:url(step1.png);
+	float:left;
+	margin:0px 10px 60px 40px;
+	font-size:16px;
+}
+#menu_step_2{
+	list-style-image:url(step2.png);
+	float:left;
+	margin:0px 10px 30px 40px;
+	font-size:18px;
+}
+#menu_step_3{
+	list-style-image:url(step3.png);
+	float:left;
+	margin:0px 10px 0px 40px;
+	font-size:18px;
+

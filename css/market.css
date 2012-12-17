@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/* CSS Document */
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{background-color:#DCF5FC;
+}
+#logo{ background-image:url(../images/Blyph-Logo.png);
+width:121px;
+height:37px;
+background-repeat:no-repeat;
+visibility:visible;
+}
+
+#wrapper{
+	width:1200px;
+	height:auto;
+	margin:40px auto 0px auto;
+	background-color:#fff;
+	border:2px solid  #E3E3E3;-moz-border-radius:25px; /*Firefox*/ border-radius:5px;
+}
+
+ul{
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+	}	
+li{
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+	}
+a{font-style:none;
+color:#333;
+margin:none;
+padding:none;
+}
+a:hover{
+color:#F19D19;
+}
+p{ font-family:Verdana, Geneva, sans-serif;
+font-size:14px;
+color:#171717;
+}
+h4{
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	border:0px;
+	font-weight:normal;
+}
+.match-item{ height:72px;
+width:70px;
+float:left;
+padding:0px;
+margin:5px 5px 5px 5px;
+}
+.item-photo-small{
+	background-image:url(images/1.jpg);
+height:50px;
+width:50px;
+padding:0px;
+margin:0px auto 0px auto;
+border:2px solid #CCC;
+}
+.match-description{ height:17px;
+width:70px;
+background-color:#333;
+padding:2px 0px 0px 0px;
+margin:0px auto 0px auto;
+font-size:10px;
+}
+.friend-match-item{
+	background-image:url(images/Picture%204.png);
+height:50px;
+width:50px;
+padding:0px;
+margin:0px auto 0px auto;
+border:2px solid #CCC;
+list-style-type:none;
+}
+.distance{
+	background-color:#0C9;
+	float:right;
+	width:20px;
+	}
+
+#column1{ 
+width:260px;
+border-right:solid 1px #CCC;
+float:left;
+padding-right:2px;
+}
+
+#column2{
+width:665px;
+height:auto;
+float:left;
+font-family:Arial, Helvetica, sans-serif;
+padding:0px 2px 0px 2px;
+border-left:solid 1px #999;
+}
+#column3{
+width:260px;
+height:auto;
+float:left;
+border-left:solid 1px #999;
+padding-left:2px;
+	}
+#result-info-box{
+	width:260px;
+	height:200px;
+	background-color:#999;
+	}
+	
+.result_box{
+	width:auto;
+height:105px;
+background-color:#FFF;
+border:solid #CCC 2px;-moz-border-radius:10px 10px 10px 10px / 10px 10px 10px 10px;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+padding:0px 0px 5px 0px;
+	}
+.title_box{ height:15px;
+width:auto;
+text-align:left;
+border-bottom:2px solid #999;
+padding:2px;
+margin:0px auto 2px auto;
+}
+#searchbar-small
+{background:#fff;
+width:250px;
+height:25px;
+border:2px solid #CCC;-moz-border-radius:5px; /*Firefox*/ border-radius:5px;
+float:inherent;
+padding:2px;
+margin:2px 0px 2px 2px;
+}
+#search-small
+{background:#C33;
+width:225px;
+height:23px;
+float:left;
+border:none;
+font-size:24px;
+}
+#search-small:focus{
+	outline-width:0;
+}
+.booklist_title{
+	background:#ccc;
+width:100%;
+height:15px;
+position:relative;
+border:0px;
+border-bottom:#999 solid 1px;
+padding:2px 0px 2px 0px;
+}
+.booklist{
+	background:#ffc;
+width:100%;
+height:20px;
+position:relative;
+border:0px;
+border-bottom:#999 solid 1px;
+padding:5px 0px 0px 0px;
+}
+.friend-image{
+	background-color:#039;
+	height:75px;
+	width:75px;
+	margin:5px;
+	}
+.book-result-image{
+	background-color:#0CC;
+	height:75px;
+	width:75px;
+	margin:5px;
+	display:inline-block;
+	}
+#footer{ width:1200px;
+height: 100px;
+background-color:#333;
+border-top:solid #1C1C1C 5px;
+filter:alpha(opacity=50);
+        -moz-opacity:0.5;
+        -khtml-opacity: 0.5;
+        opacity: 0.5;
+text-align:center;
+margin:0px auto 0px auto;
+}
+#footer a{
+	color:#000}
+	
+.image_frame{
+	margin:10px 0px 10px 10px;
+	height:150px;
+	width:150px;
+	float:left;
+	}
