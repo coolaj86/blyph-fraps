@@ -9,11 +9,6 @@ then
   wget "http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js" -O javascripts/CFInstall.min.js
 fi
 
-if [ ! -f "javascripts/global-es5.js" ]
-then
-  wget "https://raw.github.com/kriskowal/narwhal-lib/3dba395ec5da18f1ef47aa651e10896764d83270/lib/narwhal/global-es5.js" -O javascripts/global-es5.js
-fi
-
 lessc style.less > style.css
 jade *.jade
 
