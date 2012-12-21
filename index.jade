@@ -119,15 +119,18 @@ html
         #search-booklist.item_list
         #import-prompt(style='display: none;')
           //
-            <ul>
-            <li>- Or -</li>
-            </ul>
-            <div class="load-booklist searching-for-books"><a href="byu.html">Import from your BYU booklist</a></div>
-            <div class="load-booklist searching-for-books"><a href="uvu.html">Import from your UVU booklist</a></div>
+            ul
+              li - Or -
+            .load-booklist.searching-for-books
+              a(href="byu.html").
+                Import from your BYU booklist
+            .load-booklist.searching-for-books
+              a(href="uvu.html").
+                Import from your UVU booklist
         .autoloader
           h1 Tag your Booklist.
-          p
-            | Tag each book as Need, Trade, Keep (if you have it already), or Ignore (if you don't care).
+          p.
+            Tag each book as Need, Trade, Keep (if you have it already), or Ignore (if you don't care).
         // Results
         #imported-booklist.item_list
           .item
@@ -215,8 +218,8 @@ html
                 .store-image
                   img(alt='Logo', src='no-image.jpeg')
                 //
-                  <div>class="result-name">Amazon</div
-                  </div>
+                  .result-name.
+                    Amazon
                 a.button-get-it.ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
                 .result-for-price
                   | $800.00
@@ -244,10 +247,11 @@ html
     //if IE
       script
         CFInstall.check({
-        mode: "overlay",
-        url: "gcf.html",
+            mode: "overlay"
+          , url: "gcf.html"
         });
-    script(src='./javascripts/ender.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+    //script(src='./javascripts/ender.js')
     script(src='./javascripts/booklist.js')
     //
       script(src='http://platform.twitter.com/widgets.js', type='text/javascript')
