@@ -480,6 +480,19 @@ if (/asteroids/.exec(window.location.hash)) {
         $('.booklist-unsorted-data ul').append(templateBooklistItem(book));
       }
     });
+
+    [
+        '.booklist-unsorted-data'
+      , '.booklist-need-data'
+      , '.booklist-have-data'
+      , '.booklist-keep-data'
+    ].forEach(function (list) {
+      if (0 === $(list + ' .booklist-item').length) {
+        $(list).hide();
+      } else {
+        $(list).show();
+      }
+    });
   }
   updateListsG = updateLists;
 
@@ -791,10 +804,10 @@ if (/asteroids/.exec(window.location.hash)) {
 
         jsonStorage.set('user-booklist', {
             timestamp: new Date().valueOf()
-          , data: data
+          , data: data.result
         });
 
-        onBooklist(data);
+        onBooklist(data.result);
     }
 
     function getBooklistHttp() {
@@ -822,6 +835,7 @@ if (/asteroids/.exec(window.location.hash)) {
     if (!booklist || !booklist.data || new Date().valueOf() - booklist.timestamp > 10 * 60 * 60 * 1000) {
       getBooklistHttp();
     } else {
+      console.log('booklist.data', booklist.data);
       onBooklist(booklist.data);
     }
 
