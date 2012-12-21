@@ -1233,7 +1233,8 @@ if (/asteroids/.exec(window.location.hash)) {
     $('#saveyourinfo').slideUp();
     $('#logout').show();
     $('.username').text(currentUser.nickname);
-    showSocial();
+    // TODO
+    if (false) { showSocial(); }
     listUploads();
   }
 

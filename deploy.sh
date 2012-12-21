@@ -9,6 +9,7 @@ then
   wget "http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js" -O javascripts/CFInstall.min.js
 fi
 
+sed -e "s/# VERSION.*/# VERSION `date +%s`/" main.appcache.tpl > main.appcache
 lessc style.less > style.css
 jade *.jade
 
@@ -25,4 +26,3 @@ cat pakmanaged.tmp.js >> pakmanaged.js
 uglifyjs pakmanaged.js > pakmanaged.min.js
 #gzip pakmanaged.min.js -c > pakmanaged.min.js.gz
 rm -f pakmanaged.tmp.js pakmanaged.html
-sed -e "s/# VERSION.*/# VERSION `date +%s`/" main.appcache.tpl > main.appcache
