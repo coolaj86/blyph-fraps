@@ -1,0 +1,25 @@
+{
+  "name": "fraps",
+  "version": "0.5.0",
+  "description": "Textbook Trading App",
+  "main": "lib/browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Blyph/fraps"
+  },
+  "author": "AJ ONeal",
+  "browserDependencies": {},
+  "license": "Apache2",
+  "browserDependencies": {
+    "url": ">=0.7.9 <0.8.0",
+    "md5": ">=1.0.0 <1.1.0",
+    "join": ">=2.3.1 <2.4.0",
+    "json-storage": ">=1.1.2 <1.2.0",
+    "ahr2": ">=2.3.2 <2.4.0",
+    "campusbooks": ">=0.5.7 <0.6.0",
+    "isbn": ">=0.1.0 <0.2.0"
+  }
+}
