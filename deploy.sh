@@ -20,9 +20,10 @@ then
   cp node_modules/qwery/qwery.rvagg.js node_modules/qwery/qwery.js
 fi
 pakmanager build
-cat pakmanaged.js > pakmanaged.tmp.js
-echo 'window.FormData = window.FormData || function FormData() {};' >> pakmanaged.js
+mv pakmanaged.js > pakmanaged.tmp.js
+echo 'window.FormData = window.FormData || function FormData() {};' > pakmanaged.js
 cat pakmanaged.tmp.js >> pakmanaged.js
+rm pakmanaged.js
 uglifyjs pakmanaged.js > pakmanaged.min.js
 #gzip pakmanaged.min.js -c > pakmanaged.min.js.gz
 rm -f pakmanaged.tmp.js pakmanaged.html

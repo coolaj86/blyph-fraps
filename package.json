@@ -11,7 +11,6 @@
     "url": "git://github.com/Blyph/fraps"
   },
   "author": "AJ ONeal",
-  "browserDependencies": {},
   "license": "Apache2",
   "browserDependencies": {
     "url": ">=0.7.9 <0.8.0",
