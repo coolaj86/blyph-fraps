@@ -23,7 +23,8 @@ pakmanager build
 mv pakmanaged.js > pakmanaged.tmp.js
 echo 'window.FormData = window.FormData || function FormData() {};' > pakmanaged.js
 cat pakmanaged.tmp.js >> pakmanaged.js
-rm pakmanaged.js
+rm -f pakmanaged.tmp.js
+gzip pakmanaged.js -c > pakmanaged.js.gz
 uglifyjs pakmanaged.js > pakmanaged.min.js
-#gzip pakmanaged.min.js -c > pakmanaged.min.js.gz
-rm -f pakmanaged.tmp.js pakmanaged.html
+gzip pakmanaged.min.js -c > pakmanaged.min.js.gz
+rm -f pakmanaged.html
