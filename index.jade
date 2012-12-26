@@ -11,7 +11,7 @@ html
 
     link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
   body
-    a#bored-asteroids(style='position: absolute; top: 10px; right: 10px;', href='javascript:var s = document.createElement("script");s.type="text/javascript";document.body.appendChild(s);s.src="http://erkie.github.com/asteroids.min.js";void(1);') Bored?
+    a(style='position: absolute; top: 10px; right: 10px;', href='javascript:var s = document.createElement("script");s.type="text/javascript";document.body.appendChild(s);s.src="http://erkie.github.com/asteroids.min.js";void(1);') Bored?
     #js-loading-mask.css-loading-mask
     #css-logo
     div(style='clear: both;')
@@ -45,7 +45,7 @@ html
               param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
           br
 
-        .booklist_container.booklist-unsorted-data
+        .css-booklist-container.js-booklist-container.booklist-unsorted-data
           header.booklist_unsorted Unsorted
           ul
             li.booklist-item
@@ -54,7 +54,7 @@ html
               span.bli-isbn
               | ]
 
-        .booklist_container.booklist-need-data
+        .css-booklist-container.js-booklist-container.booklist-need-data
           header.booklist_need I Need
           ul
             li.booklist-item
@@ -68,13 +68,13 @@ html
                   span.mbl-trade-matches 0
                   | )
                 span.match-description Trades
-                span.online-match
+                span.css-online-match
                   | (
                   span.mbl-online-matches 0
                   | )
                 span.match-description Online Results
 
-        .booklist_container.booklist-have-data
+        .js-booklist-container.css-booklist-container.booklist-have-data
           header.booklist_have For Trade
           ul
             li.booklist-item
@@ -88,14 +88,14 @@ html
                   span.mbl-trade-matches 0
                   | )
                 span.match-description trades available
-              .online-match
-                span.online-match
+              .css-online-match
+                span.css-online-match
                   | (
                   span.mbl-online-matches 0
                   | )
                 span.match-description Online Results
 
-        .booklist_container.booklist-keep-data
+        .js-booklist-container.css-booklist-container.booklist-keep-data
           header.booklist_keep Keeping
           ul
             li.booklist-item
@@ -113,9 +113,9 @@ html
           input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
 
 
-        .searching-for-books
+        div
           h3 Tag old books for Trade. Tag this semester's books as Need
-        #search-booklist.item_list
+        .css-item-list
         #js-import-prompt(style='display: none;')
           //
             ul
@@ -126,28 +126,28 @@ html
             .load-booklist.searching-for-books
               a(href="uvu.html").
                 Import from your UVU booklist
-        .autoloader
+        .js-autoloader
           h1 Tag your Booklist.
           p.
             Tag each book as Need, Trade, Keep (if you have it already), or Ignore (if you don't care).
 
-        #js-imported-booklist.item_list
+        #js-imported-booklist.css-item-list
         #js-imported-booklist-tpl
           .item
-            .image_frame
-              .item_picture
+            .css-image-frame
+              .js-item-picture
                 img.book-image(src='css/default-book.jpg')
-            .item_info
+            .css-item-info
               .title Book Title 
               .book_course
                 span.course ENG 101
               .semester FALL 2011
               div(style='clear: both;')
               .isbn
-                .isbn_10
+                .css-isbn-10
                   | ISBN10:
                   span.isbn10 1234567890
-                .isbn_13
+                .css-isbn-13
                   | ISBN13:
                   span.isbn13 1234567890123
               .edition
@@ -155,18 +155,18 @@ html
                 span.edition-data 1st
               .authors authors:Gray Bot, willhelm, Conto, 
             #css-item-bottom-container
-              .ibc-button.button-list2 Trade/Sell
-              .ibc-button.button-want2 Need
-              .ibc-button.button-keep2 Keep
-              .ibc-button.button-ignore2 Ignore
+              .css-ibc-button.button-list2 Trade/Sell
+              .css-ibc-button.button-want2 Need
+              .css-ibc-button.button-keep2 Keep
+              .css-ibc-button.button-ignore2 Ignore
           div(style='clear: both;')
 
         #js-matches(style='display: none;')
-          .no-match
+          .css-no-match
             | We didn't find any trades for you at this time. But we did find some other results for you:
 
           #js-person-matches
-            .online-store-heading
+            .css-online-store-heading
               | Fellow BYU Students
             ul
               li.result.ppl-widget
@@ -176,7 +176,7 @@ html
                 input.email(type='hidden')
                 .result-name
                   | username
-                .ppl-write-message
+                .js-ppl-write-message
                   .button-get-it
                     | Write Message
                   | Suggested Price:
@@ -184,15 +184,15 @@ html
                     | $80.00
                   div(style='clear: both;')
 
-                  .ppl-message(style='display: none;')
-                    .trade-message
+                  .js-ppl-message(style='display: none;')
+                    div
                       label.textbox-title(for='message')
                         | When and where would you like to exchange?
                       textarea.message-box(name='message', type='text', maxlength='600', placeholder='I humbly request exchange for...')
                         | Hey @NAME
                         | I'd like to exchange @TITLE for @USD.
                         | Could we meet by @LOCATION at @TIME on @DATE?
-                      .ppl-warning
+                      div
                         | Use common sense when trading. Meet in public places and bring friends along.
                       br
                       button.ppl-send-message
@@ -216,7 +216,7 @@ html
                   // Int'l Edition
 
           #js-online-matches
-            .online-store-heading
+            .css-online-store-heading
               | Online Book Stores
             ul
             div(style='clear: both;')
