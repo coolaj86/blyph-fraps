@@ -21,7 +21,7 @@ html
           h4
             a(href='#logout', style='font-size: 18px;')
               | Not
-              span.username username
+              span.js-username username
               | ?
               u Logout
               | .
@@ -46,7 +46,7 @@ html
           br
 
         .css-booklist-container.js-booklist-container.js-booklist-unsorted-data
-          header.booklist_unsorted Unsorted
+          header.css-booklist-unsorted Unsorted
           ul
             li.css-booklist-item.js-booklist-item
               span.bli-title Elementary Linear Algebra
@@ -55,48 +55,48 @@ html
               | ]
 
         .css-booklist-container.js-booklist-container.js-booklist-need-data
-          header.booklist_need I Need
+          header.css-booklist-need I Need
           ul
             li.css-booklist-item.js-booklist-item
               span.bli-title Elementary Linear Algebra
               | [
               span.bli-isbn
               | ]
-              .match-available
+              .js-match-available.css-match-available
                 span.person-match
                   | (
                   span.mbl-trade-matches 0
                   | )
-                span.match-description Trades
+                span.css-match-description Trades
                 span.css-online-match
                   | (
                   span.mbl-online-matches 0
                   | )
-                span.match-description Online Results
+                span.css-match-description Online Results
 
         .js-booklist-container.css-booklist-container.js-booklist-have-data
-          header.booklist_have For Trade
+          header.css-booklist-have For Trade
           ul
             li.css-booklist-item.js-booklist-item
               span.bli-title Elementary Linear Algebra
               | [
               span.bli-isbn
               | ]
-              .match-available
+              .js-match-available.css-match-available
                 span.person-match
                   | (
                   span.mbl-trade-matches 0
                   | )
-                span.match-description trades available
+                span.css-match-description trades available
               .css-online-match
                 span.css-online-match
                   | (
                   span.mbl-online-matches 0
                   | )
-                span.match-description Online Results
+                span.css-match-description Online Results
 
         .js-booklist-container.css-booklist-container.js-booklist-keep-data
-          header.booklist_keep Keeping
+          header.css-booklist-keep Keeping
           ul
             li.css-booklist-item.js-booklist-item
               span.mbl-trade-matches
