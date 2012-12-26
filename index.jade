@@ -35,7 +35,7 @@ html
               | School URL:
               input(type='text', name='school', placeholder='ex: university.edu', width='500px')
             div
-              input.button(type='submit', name='submit', value='Signup / Login')
+              input(type='submit', name='submit', value='Signup / Login')
           a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
           #js-gvoiceWidget(style='display: none;')
             | Call AJ:
@@ -77,7 +77,7 @@ html
                 span.css-match-description
                   | Online Results
 
-        .js-booklist-container.css-booklist-container.js-booklist-have-data
+        .css-booklist-container.js-booklist-container.js-booklist-have-data
           header.css-booklist-have For Trade
           ul
             li.css-booklist-item.js-booklist-item
@@ -100,7 +100,7 @@ html
                 span.css-match-description
                   | Online Results
 
-        .js-booklist-container.css-booklist-container.js-booklist-keep-data
+        .css-booklist-container.js-booklist-container.js-booklist-keep-data
           header.css-booklist-keep Keeping
           ul
             li.css-booklist-item.js-booklist-item
@@ -119,7 +119,8 @@ html
 
 
         div
-          h3 Tag old books for Trade. Tag this semester's books as Need
+          h3
+            | Tag old books for Trade. Tag this semester's books as Need
         .css-item-list
         #js-import-prompt(style='display: none;')
           //
@@ -138,7 +139,7 @@ html
 
         #js-imported-booklist.css-item-list
         #js-imported-booklist-tpl
-          .css-item
+          .css-item.js-item
             .css-image-frame
               .js-item-picture
                 img.css-book-image(src='css/default-book.jpg')
@@ -189,7 +190,7 @@ html
                 .css-person.js-person
                   img(alt='Logo', src='no-image.jpeg')
 
-                input.email(type='hidden')
+                input.js-email(type='hidden')
                 .css-result-name.js-result-name
                   | username
                 .js-ppl-write-message
@@ -223,11 +224,11 @@ html
                 //
                   .css-result-name.js-result-name.
                     Amazon
-                a.css-button-get-it.js-button-get-it.ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
+                a.css-button-get-it.js-button-get-it.js-ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
                 .css-result-for-price.js-result-for-price
                   | $800.00
 
-                .ols-edition
+                .css-ols-edition.js-ols-edition
                   | EDITION
                   // Int'l Edition
 
