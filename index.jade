@@ -12,12 +12,12 @@ html
     link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
   body
     a#bored-asteroids(style='position: absolute; top: 10px; right: 10px;', href='javascript:var s = document.createElement("script");s.type="text/javascript";document.body.appendChild(s);s.src="http://erkie.github.com/asteroids.min.js";void(1);') Bored?
-    #loading-mask
-    #logo
+    #js-loading-mask.css-loading-mask
+    #css-logo
     div(style='clear: both;')
-    #wrapper
+    #css-wrapper
       #css-column1
-        #logout(style='display: none;')
+        #js-logout(style='display: none;')
           h4
             a(href='#logout', style='font-size: 18px;')
               | Not
@@ -25,9 +25,9 @@ html
               | ?
               u Logout
               | .
-        #saveyourinfo
+        #js-saveyourinfo.css-saveyourinfo
           h3 Start Saving your list
-          form#email_form
+          form#js-email-form
             div
               | Email:
               input.form_field(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
@@ -36,8 +36,8 @@ html
               input.form_field(type='text', name='school', placeholder='ex: university.edu', width='500px')
             div
               input.button(type='submit', name='submit', value='Signup / Login')
-          a#gvoice(href='#gvoiceWidget') Have Questions? Need Help?
-          #gvoiceWidget(style='display: none;')
+          a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
+          #js-gvoiceWidget(style='display: none;')
             | Call AJ:
             object(type='application/x-shockwave-flash', data='https://clients4.google.com/voice/embed/webCallButton', width='230', height='85')
               param(name='movie', value='https://clients4.google.com/voice/embed/webCallButton')
@@ -107,16 +107,16 @@ html
               | ]
 
       #css-column2
-        #searchbar
-          form#search_form
-            input#search(name='search', type='text', placeholder='Search by title or ISBN')
+        #css-searchbar
+          form#js-search-form
+            input#js-search(name='search', type='text', placeholder='Search by title or ISBN')
           input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
 
 
         .searching-for-books
           h3 Tag old books for Trade. Tag this semester's books as Need
         #search-booklist.item_list
-        #import-prompt(style='display: none;')
+        #js-import-prompt(style='display: none;')
           //
             ul
               li - Or -
@@ -131,7 +131,7 @@ html
           p.
             Tag each book as Need, Trade, Keep (if you have it already), or Ignore (if you don't care).
 
-        #imported-booklist.item_list
+        #js-imported-booklist.item_list
         #js-imported-booklist-tpl
           .item
             .image_frame
@@ -154,18 +154,18 @@ html
                 | Edition:
                 span.edition-data 1st
               .authors authors:Gray Bot, willhelm, Conto, 
-            #item-bottom-container
+            #css-item-bottom-container
               .ibc-button.button-list2 Trade/Sell
               .ibc-button.button-want2 Need
               .ibc-button.button-keep2 Keep
               .ibc-button.button-ignore2 Ignore
           div(style='clear: both;')
 
-        #matches(style='display: none;')
+        #js-matches(style='display: none;')
           .no-match
             | We didn't find any trades for you at this time. But we did find some other results for you:
 
-          #person-matches
+          #js-person-matches
             .online-store-heading
               | Fellow BYU Students
             ul
@@ -215,23 +215,23 @@ html
                   | EDITION
                   // Int'l Edition
 
-          #online-matches
+          #js-online-matches
             .online-store-heading
               | Online Book Stores
             ul
             div(style='clear: both;')
         div(style='clear: both;')
       #css-column3
-        #social-sharing
+        #css-social-sharing
           #fb-root
-          #fb-send(width='100')
+          #css-fb-send(width='100')
             #fbml(width='100')
         a.twitter-share-button(href='http://twitter.com/share') Tweet
         fb:like(href='www.facebook.com/pages/Blyph/190889114300467', width='200', show_faces='true', font='')
         g:plusone
       div(style='clear: both;')
 
-    #footer
+    #css-footer
       p ©Blyph 2011-2013
 
     //if IE
