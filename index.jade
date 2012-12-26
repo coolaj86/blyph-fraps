@@ -49,61 +49,66 @@ html
           header.css-booklist-unsorted Unsorted
           ul
             li.css-booklist-item.js-booklist-item
-              span.bli-title Elementary Linear Algebra
+              span.js-bli-title Elementary Linear Algebra
               | [
-              span.bli-isbn
+              span.js-bli-isbn
               | ]
 
         .css-booklist-container.js-booklist-container.js-booklist-need-data
           header.css-booklist-need I Need
           ul
             li.css-booklist-item.js-booklist-item
-              span.bli-title Elementary Linear Algebra
+              span.js-bli-title Elementary Linear Algebra
               | [
-              span.bli-isbn
+              span.js-bli-isbn
               | ]
               .js-match-available.css-match-available
-                span.person-match
+                span.css-person-match
                   | (
-                  span.mbl-trade-matches 0
+                  span.js-mbl-trade-matches 0
                   | )
-                span.css-match-description Trades
+                span.css-match-description
+                  | Trades
+              .js-online-match.css-online-match
                 span.css-online-match
                   | (
-                  span.mbl-online-matches 0
+                  span.js-mbl-online-matches 0
                   | )
-                span.css-match-description Online Results
+                span.css-match-description
+                  | Online Results
 
         .js-booklist-container.css-booklist-container.js-booklist-have-data
           header.css-booklist-have For Trade
           ul
             li.css-booklist-item.js-booklist-item
-              span.bli-title Elementary Linear Algebra
+              span.js-bli-title Elementary Linear Algebra
               | [
-              span.bli-isbn
+              span.js-bli-isbn
               | ]
               .js-match-available.css-match-available
-                span.person-match
+                span.css-person-match
                   | (
-                  span.mbl-trade-matches 0
+                  span.js-mbl-trade-matches 0
                   | )
-                span.css-match-description trades available
-              .css-online-match
+                span.css-match-description
+                  | Trades Available
+              .js-online-match.css-online-match
                 span.css-online-match
                   | (
-                  span.mbl-online-matches 0
+                  span.js-mbl-online-matches 0
                   | )
-                span.css-match-description Online Results
+                span.css-match-description
+                  | Online Results
 
         .js-booklist-container.css-booklist-container.js-booklist-keep-data
           header.css-booklist-keep Keeping
           ul
             li.css-booklist-item.js-booklist-item
-              span.mbl-trade-matches
-              span.mbl-online-matches
-              span.bli-title Elementary Linear Algebra
+              span.js-mbl-trade-matches
+              span.js-mbl-online-matches
+              span.js-bli-title Elementary Linear Algebra
               | [
-              span.bli-isbn
+              span.js-bli-isbn
               | ]
 
       #css-column2
@@ -133,32 +138,43 @@ html
 
         #js-imported-booklist.css-item-list
         #js-imported-booklist-tpl
-          .item
+          .css-item
             .css-image-frame
               .js-item-picture
-                img.book-image(src='css/default-book.jpg')
+                img.css-book-image(src='css/default-book.jpg')
             .css-item-info
-              .title Book Title 
-              .book_course
-                span.course ENG 101
-              .semester FALL 2011
+              .css-title.js-title
+                | Book Title 
+              .css-book-course
+                span.js-course
+                  | ENG 101
+              .css-semester.js-semester
+                | FALL 2011
               div(style='clear: both;')
-              .isbn
+              .css-isbn
                 .css-isbn-10
                   | ISBN10:
-                  span.isbn10 1234567890
+                  span.js-isbn10
+                    | 1234567890
                 .css-isbn-13
                   | ISBN13:
-                  span.isbn13 1234567890123
-              .edition
+                  span.js-isbn13
+                    | 1234567890123
+              .css-edition
                 | Edition:
-                span.edition-data 1st
-              .authors authors:Gray Bot, willhelm, Conto, 
+                span.js-edition-data
+                  | 1st
+              .css-authors.js-authors
+                | authors:Gray Bot, willhelm, Conto, 
             #css-item-bottom-container
-              .css-ibc-button.button-list2 Trade/Sell
-              .css-ibc-button.button-want2 Need
-              .css-ibc-button.button-keep2 Keep
-              .css-ibc-button.button-ignore2 Ignore
+              .css-ibc-button.css-button-list2.js-button-list2
+                | Trade/Sell
+              .css-ibc-button.css-button-want2.js-button-want2
+                | Need
+              .css-ibc-button.css-button-keep2.js-button-keep2
+                | Keep
+              .css-ibc-button.css-button-ignore2.js-button-ignore2
+                | Ignore
           div(style='clear: both;')
 
         #js-matches(style='display: none;')
@@ -170,7 +186,7 @@ html
               | Fellow BYU Students
             ul
               li.css-result.css-ppl-widget.js-ppl-widget
-                .person
+                .css-person.js-person
                   img(alt='Logo', src='no-image.jpeg')
 
                 input.email(type='hidden')
@@ -186,9 +202,9 @@ html
 
                   .js-ppl-message(style='display: none;')
                     div
-                      label.textbox-title(for='message')
+                      label.css-textbox-title(for='message')
                         | When and where would you like to exchange?
-                      textarea.message-box(name='message', type='text', maxlength='600', placeholder='I humbly request exchange for...')
+                      textarea.css-message-box(name='message', type='text', maxlength='600', placeholder='I humbly request exchange for...')
                         | Hey @NAME
                         | I'd like to exchange @TITLE for @USD.
                         | Could we meet by @LOCATION at @TIME on @DATE?
@@ -202,7 +218,7 @@ html
           #js-online-matches-tpl
             ul
               li.css-result
-                .store-image
+                .js-store-image.css-store-image
                   img(alt='Logo', src='no-image.jpeg')
                 //
                   .css-result-name.js-result-name.
