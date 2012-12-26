@@ -30,10 +30,10 @@ html
           form#js-email-form
             div
               | Email:
-              input.form_field(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
+              input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
             div
               | School URL:
-              input.form_field(type='text', name='school', placeholder='ex: university.edu', width='500px')
+              input(type='text', name='school', placeholder='ex: university.edu', width='500px')
             div
               input.button(type='submit', name='submit', value='Signup / Login')
           a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
@@ -177,7 +177,7 @@ html
                 .result-name
                   | username
                 .js-ppl-write-message
-                  .button-get-it
+                  .css-button-get-it.js-button-get-it
                     | Write Message
                   | Suggested Price:
                   .result-for-price
@@ -207,7 +207,7 @@ html
                 //
                   .result-name.
                     Amazon
-                a.button-get-it.ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
+                a.css-button-get-it.js-button-get-it.ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
                 .result-for-price
                   | $800.00
 
