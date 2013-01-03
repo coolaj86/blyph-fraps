@@ -108,12 +108,12 @@ a {
   visibility: visible;
 }
 #css-wrapper {
-  width:99%;
-  max-width:1200px;
+  left:0px;
+  right:0px;
+  //max-width:1200px;
   min-height: 500px;
   height: auto;
   margin: 0px auto 0px auto;
-  margin-top: 5px;
   background-color: #F8F8F8;
   border: 2px solid  #E3E3E3;
   border-radius: 5px;
@@ -154,7 +154,7 @@ a {
   float: left;
   padding-left: 0px;
 }
-#css-footer {
+/*#css-footer {
   width:100%
   height:10em;
   background-color: #333;
@@ -162,7 +162,7 @@ a {
   opacity: 0.5;
   text-align: center;
   margin: 0px auto 0px auto;
-}
+}*/
 #css-footer a {
   color: #000000;
 }
@@ -242,9 +242,16 @@ background-image:url(../images/case4.svg);
 }
 
 @media all and(max-width:600px){
-  body{background:red;
-  float:none;
-  width:75%;}
+  body{background:red;}
+  #css-wrapper {
+    left:0px;
+    right:0px;
+    //max-width:1200px;
+    min-height: 500px;
+    height: auto;
+    margin: 0px auto 0px auto;
+    background-color: #F8F8F8;
+  }
   
   #css-searchbar {
     width:100%;
