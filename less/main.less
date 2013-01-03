@@ -246,17 +246,12 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 //@media all and(max-width:600px){
-float:none;
 body{background:red;
 }
 #css-wrapper {
     left:0px;
     right:0px;
-    //max-width:1200px;
-    min-height: 500px;
     height: auto;
-    margin: 0px auto 0px auto;
-    background-color:blue;
 }
 #css-searchbar {
     width:100%;
@@ -272,6 +267,10 @@ body{background:red;
 }
 #css-banner-image {display:none;}
 .css-case-images{display:none}
+.css-cases{
+  float:none;
+  font-size:10em;
+}
 #css-column1 {
 width:100%;
 }
@@ -280,5 +279,9 @@ width:100%
 height: auto;
 padding:0px;
 text-align:center;
+}
+.css-booklist-container{
+  width:100%;
+  height:auto;
 }
 }
