@@ -27,6 +27,11 @@ html
           li Buy from online stores
           li Sell to college students 
           li sell to online stores
+      #css-searchbar
+        form#js-search-form
+          input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
+        input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
+      
       #css-column1
         #js-logout(style='display: none;')
           h4
@@ -121,12 +126,6 @@ html
               | ]
 
       #css-column2
-        #css-searchbar
-          form#js-search-form
-            input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
-          input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
-
-
         div
           h3
             | Tag old books for Trade. Tag this semester's books as Need
