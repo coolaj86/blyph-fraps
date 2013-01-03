@@ -16,6 +16,10 @@ html
     #css-wrapper
       #css-logo
       div(style='clear: both;')
+      #css-searchbar
+        form#js-search-form
+          input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
+        input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
       #css-show-first 
         H1 The best place to get your college books
         a(href="#")
@@ -27,10 +31,7 @@ html
           li Buy from online stores
           li Sell to college students 
           li sell to online stores
-      #css-searchbar
-        form#js-search-form
-          input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
-        input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
+      
       
       #css-column1
         #js-logout(style='display: none;')
