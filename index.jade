@@ -32,6 +32,18 @@ html
           input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
         input.css-search-icon(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
       div(style='clear: both;')
+      
+      #css-social-sharing
+          #fb-root
+          #css-fb-send(width='100')
+          #fbml(width='100')
+          a.twitter-share-button(href='http://twitter.com/share') Tweet this page
+          fb:like(href='www.facebook.com/pages/Blyph/190889114300467', width='200', show_faces='true', font='')
+          g:plusone
+      div(style='clear: both;')
+      
+      
+      
       #css-show-first
         #css-banner-image
           h1.css-banner-head The best place to find college textbooks
@@ -67,7 +79,7 @@ html
       #css-column1
         #js-saveyourinfo.css-saveyourinfo 
           h3 Start Saving your list
-          form#js-email-form
+          form#js-email-form.css-email-form
             div
               | Email:
               input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
@@ -264,15 +276,6 @@ html
             div(style='clear: both;')
         div(style='clear: both;')
       #css-column3
-        #css-social-sharing
-          #fb-root
-          #css-fb-send(width='100')
-          #fbml(width='100')
-          a.twitter-share-button(href='http://twitter.com/share') Tweet this page
-          fb:like(href='www.facebook.com/pages/Blyph/190889114300467', width='200', show_faces='true', font='')
-          g:plusone
-      div(style='clear: both;')
-
       #css-footer
         p ©Blyph 2011-2013
 
