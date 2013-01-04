@@ -30,24 +30,11 @@ html
             | ?
             u Logout
             | .
-      #js-saveyourinfo.css-saveyourinfo
-        h3 Start Saving your list
+      #js-saveyourinfo.css-school-field{
         form#js-email-form
-          div
-            | Email:
-            input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
           div
             | School URL:
             input(type='text', name='school', placeholder='ex: university.edu', width='500px')
-          div
-            input(type='submit', name='submit', value='Signup / Login')
-        a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
-        #js-gvoiceWidget(style='display: none;')
-          | Call AJ:
-          object(type='application/x-shockwave-flash', data='https://clients4.google.com/voice/embed/webCallButton', width='230', height='85')
-            param(name='movie', value='https://clients4.google.com/voice/embed/webCallButton')
-            param(name='wmode', value='transparent')
-            param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
         br
         
       #css-searchbar
@@ -78,12 +65,33 @@ html
             h2 sell to college students
             #css-case-image4.css-case-images
             p sell your textbooks to local students.
+      div(style='clear: both;')
       //#css-show-second
         //#css-case1-banner
           //h1.css-banner-head Buy books from college classmates
           //a.css-banner-sub-head(href="#")
             //h3 search books now &raquo;
       #css-column1
+      #js-saveyourinfo.css-saveyourinfo 
+        h3 Start Saving your list
+        form#js-email-form
+          div
+            | Email:
+            input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
+          div
+            | School URL:
+            input(type='text', name='school', placeholder='ex: university.edu', width='500px')
+          div
+            input(type='submit', name='submit', value='Signup / Login')
+        a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
+        #js-gvoiceWidget(style='display: none;')
+          | Call AJ:
+          object(type='application/x-shockwave-flash', data='https://clients4.google.com/voice/embed/webCallButton', width='230', height='85')
+            param(name='movie', value='https://clients4.google.com/voice/embed/webCallButton')
+            param(name='wmode', value='transparent')
+            param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
+        br
+      
         .css-booklist-container.js-booklist-container.js-booklist-unsorted-data
           header.css-booklist-unsorted Unsorted
           ul
