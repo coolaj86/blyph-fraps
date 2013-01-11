@@ -2,11 +2,45 @@
 /* CSS Document */
 body {
   background-color: #666;
+  font-family: 'Source Sans Pro', sans-serif; 
 }
-li {
-  margin: opx;
+header{
+  left: 0px;
+  right: 0px;
+  height: auto;
+  margin: 0px auto 0px auto;
+  max-width: 1240px;
+}
+footer{
+  left: 0px;
+  right: 0px;
+  height: auto;
+  margin: 0px auto 0px auto;
+  max-width: 1240px;
+}
+a{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+a :visited{
+  color: #00D6FF;
+}
+ul {
+  list-style-type: none;
+  margin: 0px 5px
+	0px 5px;
   padding: 0px;
-  font-family: 'Didact Gothic', serif;
+}
+
+li {
+  margin: 0px;
+  padding: 0px;
   font-style: normal;
   font-weight: 400;
   text-shadow: none;
@@ -23,8 +57,8 @@ hr {
   border: solid #EFEFEF 1px;
 }
 h1 {
-  color: #8CC63F;
-  font-family: 'Didact Gothic', serif;
+  color: #00D6FF;
+  font-family: 'Source Sans Pro', sans-serif; 
   height: 35px;
   font-size: 35px;
   font-style: normal;
@@ -38,10 +72,9 @@ h1 {
   margin: 10px 0px 10px 0px;
 }
 h2 {
-  color: #8CC63F;
-  font-family: 'Didact Gothic', serif;
+  color: #00D6FF;
   height: 28px;
-  font-size: 28px;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: 400;
   text-shadow: none;
@@ -53,9 +86,8 @@ h2 {
 }
 h3 {
   color: #666;
-  font-family: 'Didact Gothic', serif;
   height: 30px;
-  font-size: 25px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   text-shadow: none;
@@ -68,7 +100,6 @@ h3 {
   padding: 0px 0px 10px 5px;
 }
 h4 {
-  font-family: 'Didact Gothic', serif;
   height: 30px;
   font-size: 20px;
   font-style: normal;
@@ -86,87 +117,236 @@ h4 {
 p {
   color: #9cce4d;
 }
-a {
-  font-family: 'Didact Gothic', serif;
-  height: 12px;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  text-shadow: none;
-  text-decoration: none;
-  text-transform: none;
-  letter-spacing: -0.015em;
-  word-spacing: 0em;
-  line-height: 1.2;
-  color: #8CC63F;
-}
+
 #css-logo {
   background-image: url(../images/Blyph-Logo.png);
   width: 121px;
   height: 37px;
   background-repeat: no-repeat;
   visibility: visible;
+  float:left;
 }
 #css-wrapper {
-  width: 1200px;
-  min-height: 500px;
-  height: auto;
-  margin: 0px auto 0px auto;
-  margin-top: 5px;
-  background-color: #F8F8F8;
-  border: 2px solid  #E3E3E3;
-  border-radius: 5px;
-  /*Firefox*/
-
-  -moz-border-radius: 5px;
+left: 0px;
+right: 0px;
+min-height: 500px;
+height: auto;
+margin: .5em auto 0px auto;
+background-color: #F8F8F8;
+border: 2px solid #E3E3E3;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px;
+max-width: 1240px;
+padding-top: 1em;
+}
+.css-school-field {
+  width: 21%;
+  position: absolute;
+  height: 3.1em;
+}
+.css-school-input{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 #css-searchbar {
-  width: 645px;
-  height: 35px;
+  width: 54%;
+  height: 2.15em;
   border: 3px solid #CCC;
   -moz-border-radius: 10px;
   /*Firefox*/
   border-radius: 10px;
-  margin: 5px auto 0px auto;
+  margin: 0em auto 1em auto;
   float: inherent;
   padding: 5px;
   background: #FFF;
 }
-#css-column1 {
-  width: 260px;
+.css-search {
+  width: 90%;
+  height:1.3em;
   float: left;
-  padding-right: 2px;
-  border-right: solid 1px #CCC;
+  border: none;
+  font-size: 24px;
+}
+.css-search:focus {
+  outline-width: 0;
+}
+.css-search-icon{
+  height: 3em;
+  width: 3em;
+}
+#css-column1 {
+  width: 22%;
+  float: left;
 }
 #css-column2 {
-  width: 665px;
-  height: auto;
-  float: left;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 2px 0px 2px;
-  text-align: center;
+width: 55%;
+height: auto;
+float: left;
+padding: 0px 2px 0px 2px;
+margin: 0 0 0 5px;
 }
+
 #css-column3 {
-  width: 260px;
-  height: auto;
+  width: 22%;
   float: left;
-  padding-left: 0px;
 }
-#css-footer {
-  width: 1200px;
-  height: 100px;
-  background-color: #333;
-  border-top: solid #1C1C1C 5px;
-  opacity: 0.5;
-  text-align: center;
-  margin: 0px auto 0px auto;
-}
-#css-footer a {
-  color: #000000;
-}
+
 #css-social-sharing {
-  height: 400px;
-  width: 400px;
-  margin: 0px auto 0px auto;
-  background: #f8F8F8;
+width: auto;
+height: auto;
+padding-left: 0px;
+float: right;
+}
+
+.css-saveyourinfo{ 
+background: #FFC;
+text-align: center;
+width: 97%;
+}
+.css-email-form{
+text-align: right;
+}
+#css-show-first {
+  height:auto
+  width:100%; 
+  background:#e5e5e5
+}
+#css-banner-image {
+height: 21em;
+width: 100%;
+background-image: url(../images/holding-stack-of-textbooks.jpg);
+background-repeat: no-repeat;
+}
+
+.css-banner-head {
+left: 50px;
+top: 50px;
+font-size: 4em;
+max-width: 10em;
+line-height: 1em;
+float:left;
+margin:1em 1em;
+}
+
+.css-banner-sub-head {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  float: left;
+  margin: 1.4em 2.3em;
+
+}
+.css-cases{
+  font-family: 'Source Sans Pro', sans-serif;
+  float: left;
+  width: 21%;
+  height: 15em;
+  text-align: center;
+  margin: 1em 0em 1em 1.5em;
+  background: white;
+  padding:.2em;
+}
+.css-cases p{ 
+  text-align:left;
+  color:#555;
+  font-size:.8em;
+}
+.css-case-images{
+  background-repeat: no-repeat;
+  height: 6em;
+  width: 10em;
+  margin: 0em auto 0 auto;
+}
+#css-case-image5{
+background-image:url(../images/case5.svg);
+}
+
+#css-case-image2{
+background-image:url(../images/case2.svg);
+}
+
+#css-case-image3{
+background-image:url(../images/case3.svg);
+}
+
+#css-case-image4{
+background-image:url(../images/case4.svg);
+}
+
+#css-show-second {
+  height:auto
+  width:100%; 
+  background:#e5e5e5
+}
+#css-case1-banner{
+  height:23em;
+  width:100%;
+  background-image:url(../images/placeholder.jpg);
+  position:relative;
+  background-repeat:none;
+}
+.css-twitter-share-button{
+   color: #00D6FF;
+}
+.css-twitter-share-button :visited{
+   color: #00D6FF;
+}
+
+
+
+/*@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {*/
+
+@media all and(max-width:850px){
+body{background:red;
+}
+#css-wrapper {
+    left:0px;
+    right:0px;
+    height: auto;
+}
+.css-case-images{display:none}
+.css-cases {
+width: 21%;
+height: 100%;
+background: transparent;
+font-size: 0.9em;
+}
+.css-cases p {
+  display:none;
+}
+#css-column1 {
+width:100%;
+float:none;
+padding:0px;
+}
+#css-column2 {
+width:100%;
+height: auto;
+padding:0px;
+float:none;
+}
+.css-booklist-container css-booklist-item{
+  width:100%;
+  height:auto;
+}
+.css-saveyourinfo {
+background: #FFC;
+text-align: center;
+width: 100%;
+height: 8em;
+}
+.css-email-form {
+text-align: right;
+float: left;
+}
+.css-item {
+width: 99%;
+height: 12em;
+background: white;
+border:none;
+}
+
+
 }

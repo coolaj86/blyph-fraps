@@ -3,31 +3,81 @@ html
   head
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=Edge,chrome=1')
-    title Blyph
+    meta (http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta (name='apple-touch-fullscreen', content='yes')
+    meta (name='apple-mobile-web-app-capable', content='yes')
+    meta (name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    
+    title Find your textbooks at Blyph
     //if IE
       script(src='./javascripts/CFInstall.min.js')
     link(href='./style.css', rel='stylesheet', type='text/css')
 
-
-    link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:regular&v1', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300', rel='stylesheet', type='text/css')
   body
-    a(style='position: absolute; top: 10px; right: 10px;', href='javascript:var s = document.createElement("script");s.type="text/javascript";document.body.appendChild(s);s.src="http://erkie.github.com/asteroids.min.js";void(1);') Bored?
-    #js-loading-mask.css-loading-mask
-    #css-logo
-    div(style='clear: both;')
+    //a(style='position: absolute; top: 10px; right: 10px;', href='javascript:var s = document.createElement("script");s.type="text/javascript";document.body.appendChild(s);s.src="http://erkie.github.com/asteroids.min.js";void(1);') Bored?
+    //#js-loading-mask.css-loading-mask
+    header
+      a(href='index.html')
+         #css-logo
+      #css-social-sharing
+        #fb-root
+        #css-fb-send(width='100')
+        #fbml(width='100')
+        a.css-twitter-share-button(href='http://twitter.com/share') Tweet this page
+        fb:like(href='http://fb.com/Blyph', width='200', show_faces='true', font='')
+        g:plusone
+    div(style='clear: both;')    
     #css-wrapper
+      
+      #js-saveyourinfo.css-school-field
+        form#js-email-form
+          div.css-school-input
+            | School URL:
+            input(type='text', name='school', placeholder='ex: university.edu', width='500px')
+        br
+        
+      #css-searchbar
+        form#js-search-form
+          input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
+        input.css-search-icon(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
+
+      #css-show-first
+        #css-banner-image
+          h1.css-banner-head The best place to find college textbooks
+          div(style='clear: both;')
+          a.css-banner-sub-head(href="#")
+            h3 search books now &raquo;
+        ul
+          li.css-cases
+            a(href='#')
+              h2 Buy textbooks from local students
+              #css-case-image5.css-case-images
+              p Buy the textbooks you need from students at your school.
+             
+          li.css-cases
+            a(href='#')
+              h2 Compare prices from online stores
+              #css-case-image2.css-case-images
+              P Price compare hundreds of online stores at the same time.
+          li.css-cases 
+            a(href='#')
+              h2 Sell back to online stores
+              #css-case-image3.css-case-images 
+              p Get top dollar for your textbooks by selling them to online bookstores.
+          li.css-cases
+            a(href='#')
+              h2 Sell to college students
+              #css-case-image4.css-case-images
+              p Sell your textbooks to local students.
+      div(style='clear: both;')
+      //#css-show-second
+        #css-case1-banner
+          h1.css-banner-head Buy books from college classmates
       #css-column1
-        #js-logout(style='display: none;')
-          h4
-            a(href='#logout', style='font-size: 18px;')
-              | Not
-              span.js-username username
-              | ?
-              u Logout
-              | .
-        #js-saveyourinfo.css-saveyourinfo
-          h3 Start Saving your list
-          form#js-email-form
+        #js-saveyourinfo.css-saveyourinfo 
+          h3 Save your booklist for later
+          form#js-email-form.css-email-form
             div
               | Email:
               input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
@@ -44,8 +94,8 @@ html
               param(name='wmode', value='transparent')
               param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
           br
-
-        .css-booklist-container.js-booklist-container.js-booklist-unsorted-data
+    
+        //.css-booklist-container.js-booklist-container.js-booklist-unsorted-data
           header.css-booklist-unsorted Unsorted
           ul
             li.css-booklist-item.js-booklist-item
@@ -55,7 +105,7 @@ html
               | ]
 
         .css-booklist-container.js-booklist-container.js-booklist-need-data
-          header.css-booklist-need I Need
+          header.css-booklist-need Books I&rsquo;m buying
           ul
             li.css-booklist-item.js-booklist-item
               span.js-bli-title Elementary Linear Algebra
@@ -68,16 +118,16 @@ html
                   span.js-mbl-trade-matches 0
                   | )
                 span.css-match-description
-                  | Trades
+                  | Local
                 span.css-online-match
                   | (
                   span.js-mbl-online-matches 0
                   | )
                 span.css-match-description
-                  | Online Results
+                  | Online
 
         .css-booklist-container.js-booklist-container.js-booklist-have-data
-          header.css-booklist-have For Trade
+          header.css-booklist-have Books I&rsquo;m sellling
           ul
             li.css-booklist-item.js-booklist-item
               span.js-bli-title Elementary Linear Algebra
@@ -98,7 +148,7 @@ html
                 span.css-match-description
                   | Online Results
 
-        .css-booklist-container.js-booklist-container.js-booklist-keep-data
+        //.css-booklist-container.js-booklist-container.js-booklist-keep-data
           header.css-booklist-keep Keeping
           ul
             li.css-booklist-item.js-booklist-item
@@ -110,15 +160,6 @@ html
               | ]
 
       #css-column2
-        #css-searchbar
-          form#js-search-form
-            input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
-          input(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
-
-
-        div
-          h3
-            | Tag old books for Trade. Tag this semester's books as Need
         .css-item-list
         #js-import-prompt(style='display: none;')
           //
@@ -131,10 +172,6 @@ html
               a(href="uvu.html").
                 Import from your UVU booklist
         .js-autoloader
-          h1 Tag your Booklist.
-          p.
-            Tag each book as Need, Trade, Keep (if you have it already), or Ignore (if you don't care).
-
         #js-imported-booklist.css-item-list
         #js-imported-booklist-tpl
           .css-item.js-item
@@ -144,10 +181,10 @@ html
             .css-item-info
               .css-title.js-title
                 | Book Title 
-              .css-book-course
+              //.css-book-course
                 span.js-course
                   | ENG 101
-              .css-semester.js-semester
+              //.css-semester.js-semester
                 | FALL 2011
               div(style='clear: both;')
               .css-isbn
@@ -166,14 +203,14 @@ html
               .css-authors.js-authors
                 | authors:Gray Bot, willhelm, Conto, 
             #css-item-bottom-container
-              .css-ibc-button.css-button-list2.js-button-list2
-                | Trade/Sell
               .css-ibc-button.css-button-want2.js-button-want2
-                | Need
-              .css-ibc-button.css-button-keep2.js-button-keep2
-                | Keep
-              .css-ibc-button.css-button-ignore2.js-button-ignore2
-                | Ignore
+                | Compare prices
+              .css-ibc-button.css-button-list2.js-button-list2
+                | Sell it
+              //.css-ibc-button.css-button-keep2.js-button-keep2
+                | Save
+              //.css-ibc-button.css-button-ignore2.js-button-ignore2
+                | Remove
           div(style='clear: both;')
 
         #js-matches(style='display: none;')
@@ -237,16 +274,8 @@ html
             div(style='clear: both;')
         div(style='clear: both;')
       #css-column3
-        #css-social-sharing
-          #fb-root
-          #css-fb-send(width='100')
-            #fbml(width='100')
-        a.twitter-share-button(href='http://twitter.com/share', target="_blank") Tweet
-        fb:like(href='http://fb.com/Blyph', width='200', show_faces='true', font='')
-        g:plusone
       div(style='clear: both;')
-
-    #css-footer
+    footer
       p ©Blyph 2011-2013
 
     //if IE
