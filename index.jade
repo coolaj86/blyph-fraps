@@ -42,7 +42,7 @@ html
           input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
         input.css-search-icon(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
 
-      #css-show-first
+      #css-show-first.js-show-first
         #css-banner-image
           h1.css-banner-head The best place to find college textbooks
           div(style='clear: both;')
@@ -100,14 +100,18 @@ html
           ul
             li.css-booklist-item.js-booklist-item
               span.js-bli-title Elementary Linear Algebra
-              //span.js-bli-isbn
+              | [
+              span.css-bli-isbn.js-bli-isbn
+              | ]
 
         .css-booklist-container.js-booklist-container.js-booklist-need-data
           header.css-booklist-need Books I&rsquo;m buying
           ul
             li.css-booklist-item.js-booklist-item
               span.js-bli-title Elementary Linear Algebra
-              //span.js-bli-isbn
+              | [
+              span.css-bli-isbn.js-bli-isbn
+              | ]
               .js-match-available.css-match-available
                 span.css-person-match
                   | (
@@ -127,7 +131,7 @@ html
           ul
             li.css-booklist-item.js-booklist-item
               span.js-bli-title Elementary Linear Algebra
-              //span.js-bli-isbn
+              span.css-bli-isbn.js-bli-isbn
               .js-match-available.css-match-available
                 span.css-person-match
                   | (
@@ -149,9 +153,7 @@ html
               span.js-mbl-trade-matches
               span.js-mbl-online-matches
               span.js-bli-title Elementary Linear Algebra
-              | [
-              span.js-bli-isbn
-              | ]
+              span.css-bli-isbn.js-bli-isbn
 
       #css-column2
         .css-item-list
@@ -220,7 +222,7 @@ html
                 input.js-email(type='hidden')
                 .css-result-name.js-result-name
                   | username
-                .js-ppl-write-message
+                .js-ppl-write-message.css-ppl-write-message
                   .css-button-get-it.js-button-get-it
                     | Write Message
                   | Suggested Price:
