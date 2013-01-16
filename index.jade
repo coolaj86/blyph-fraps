@@ -102,13 +102,13 @@ html
               
               .js-match-available.css-match-available
                 span.css-person-match
-                  span.css-loading-small-gif
+                  span.css-loading-small-gif.js-loading-small-gif
                   span.js-mbl-trade-matches 0
                   
                 span.css-match-description
                   | Local
                 span.css-online-match
-                  span.css-loading-small-gif
+                  span.css-loading-small-gif.js-loading-small-gif
                   span.js-mbl-online-matches 0
                   
                 span.css-match-description
@@ -197,8 +197,8 @@ html
                 | Remove
           div(style='clear: both;')
         
-        .css-loading-gif
-        #js-matches(style='display: none;')
+        .css-loading-gif.js-loading-gif(style="display: none;")
+        #js-matches(style="display: none;")
           .css-no-match
           #js-person-matches
             .css-online-store-heading
