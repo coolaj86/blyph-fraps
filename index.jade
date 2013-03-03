@@ -42,7 +42,7 @@ html
             div(style='clear: both;')
             a.css-banner-sub-head(href="#")
               h3 search books now &raquo;       
-        #css-wrapper
+        #cases-wrapper
           ul
             li.css-cases
               a(href='#')
@@ -70,200 +70,201 @@ html
       //#css-show-second
         #css-case1-banner
           h1.css-banner-head Buy books from college classmates
-    #css-column1
-      #js-saveyourinfo.css-saveyourinfo 
-        h3 Save your booklist for later
-        form#js-email-form.css-email-form
-          div
-            | Email:
-            input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
-          div
-            | School URL:
-            input(type='text', name='school', placeholder='ex: university.edu', width='500px')
-          div
-            input(type='submit', name='submit', value='Signup / Login')
-        a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
-        #js-gvoiceWidget(style='display: none;')
-          | Call AJ:
-          object(type='application/x-shockwave-flash', data='https://clients4.google.com/voice/embed/webCallButton', width='230', height='85')
-            param(name='movie', value='https://clients4.google.com/voice/embed/webCallButton')
-            param(name='wmode', value='transparent')
-            param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
-        br
-      //.css-booklist-container.js-booklist-container.js-booklist-unsorted-data
-        header.css-booklist-unsorted Unsorted
-        ul
-          li.css-booklist-item.js-booklist-item
-            div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
-            span.css-bli-isbn.js-bli-isbn
+    #css-wrapper
+      #css-column1
+        #js-saveyourinfo.css-saveyourinfo 
+          h3 Save your booklist for later
+          form#js-email-form.css-email-form
+            div
+              | Email:
+              input(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
+            div
+              | School URL:
+              input(type='text', name='school', placeholder='ex: university.edu', width='500px')
+            div
+              input(type='submit', name='submit', value='Signup / Login')
+          a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
+          #js-gvoiceWidget(style='display: none;')
+            | Call AJ:
+            object(type='application/x-shockwave-flash', data='https://clients4.google.com/voice/embed/webCallButton', width='230', height='85')
+              param(name='movie', value='https://clients4.google.com/voice/embed/webCallButton')
+              param(name='wmode', value='transparent')
+              param(name='FlashVars', value='id=eefa487d95b71e2a840a26f71e7bac82fbd7e2b4&style=0')
+          br
+        //.css-booklist-container.js-booklist-container.js-booklist-unsorted-data
+          header.css-booklist-unsorted Unsorted
+          ul
+            li.css-booklist-item.js-booklist-item
+              div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
+              span.css-bli-isbn.js-bli-isbn
 
-      .css-booklist-container.js-booklist-container.js-booklist-need-data
-        header.css-booklist-need Books I&rsquo;m buying
-        ul
-          li.css-booklist-item.js-booklist-item
-            div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
-            span.css-bli-isbn.js-bli-isbn
+        .css-booklist-container.js-booklist-container.js-booklist-need-data
+          header.css-booklist-need Books I&rsquo;m buying
+          ul
+            li.css-booklist-item.js-booklist-item
+              div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
+              span.css-bli-isbn.js-bli-isbn
             
-            .js-match-available.css-match-available
-              span.css-person-match
-                span.css-loading-small-gif.js-loading-small-gif
-                span.js-mbl-trade-matches 0
+              .js-match-available.css-match-available
+                span.css-person-match
+                  span.css-loading-small-gif.js-loading-small-gif
+                  span.js-mbl-trade-matches 0
                 
-              span.css-match-description
-                | Local
-              span.css-online-match
-                span.css-loading-small-gif.js-loading-small-gif
-                span.js-mbl-online-matches 0
+                span.css-match-description
+                  | Local
+                span.css-online-match
+                  span.css-loading-small-gif.js-loading-small-gif
+                  span.js-mbl-online-matches 0
                 
-              span.css-match-description
-                | Online
+                span.css-match-description
+                  | Online
 
-      .css-booklist-container.js-booklist-container.js-booklist-have-data
-        header.css-booklist-have Books I&rsquo;m sellling
-        ul
-          li.css-booklist-item.js-booklist-item
-            div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
-            span.css-bli-isbn.js-bli-isbn
-            .js-match-available.css-match-available
-              span.css-person-match
-                | (
-                span.js-mbl-trade-matches 0
-                | )
-              span.css-match-description
-                | Trades
-              span.css-online-match
-                | (
-                span.js-mbl-online-matches 0
-                | )
-              span.css-match-description
-                | Online Results
-
-      //.css-booklist-container.js-booklist-container.js-booklist-keep-data
-        header.css-booklist-keep Keeping
-        ul
-          li.css-booklist-item.js-booklist-item
-            span.js-mbl-trade-matches
-            span.js-mbl-online-matches
-            div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
-            span.css-bli-isbn.js-bli-isbn
-
-    #css-column2
-      .css-item-list
-      #js-import-prompt(style='display: none;')
-        //
+        .css-booklist-container.js-booklist-container.js-booklist-have-data
+          header.css-booklist-have Books I&rsquo;m sellling
           ul
-            li - Or -
-          .js-load-booklist.css-load-booklist
-            a(href="byu.html").
-              Import from your BYU booklist
-          .js-load-booklist.css-load-booklist
-            a(href="uvu.html").
-              Import from your UVU booklist
-      .js-autoloader
-      #js-imported-booklist.css-item-list
-      #js-imported-booklist-tpl
-        .css-item.js-item
-          .css-image-frame
-            .js-item-picture
-              img.css-book-image(src='css/default-book.jpg')
-          .css-item-info
-            .css-title.js-title
-              | Book Title 
-            //.css-book-course
-              span.js-course
-                | ENG 101
-            //.css-semester.js-semester
-              | FALL 2011
-            div(style='clear: both;')
-            .css-isbn
-              .css-isbn-10
-                | ISBN10:
-                span.js-isbn10
-                  | 1234567890
-              .css-isbn-13
-                | ISBN13:
-                span.js-isbn13
-                  | 1234567890123
-            .css-edition
-              | Edition:
-              span.js-edition-data
-                | 1st
-            .css-authors.js-authors
-              | authors:Gray Bot, willhelm, Conto, 
-          #css-item-bottom-container
-            .css-ibc-button.css-button-want2.js-button-want2
-              | Compare prices
-            .css-ibc-button.css-button-list2.js-button-list2
-              | Sell it
-            //.css-ibc-button.css-button-keep2.js-button-keep2
-              | Save
-            //.css-ibc-button.css-button-ignore2.js-button-ignore2
-              | Remove
-        div(style='clear: both;')
-      
-      .css-loading-gif.js-loading-gif(style="display: none;")
-      #js-matches(style="display: none;")
-        .css-no-match
-        #js-person-matches
-          .css-online-store-heading
-            | Local listings
+            li.css-booklist-item.js-booklist-item
+              div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
+              span.css-bli-isbn.js-bli-isbn
+              .js-match-available.css-match-available
+                span.css-person-match
+                  | (
+                  span.js-mbl-trade-matches 0
+                  | )
+                span.css-match-description
+                  | Trades
+                span.css-online-match
+                  | (
+                  span.js-mbl-online-matches 0
+                  | )
+                span.css-match-description
+                  | Online Results
+
+        //.css-booklist-container.js-booklist-container.js-booklist-keep-data
+          header.css-booklist-keep Keeping
           ul
-            li.css-result.css-ppl-widget.js-ppl-widget
-              .css-person.js-person
-                img(alt='Logo', src='no-image.jpeg')
+            li.css-booklist-item.js-booklist-item
+              span.js-mbl-trade-matches
+              span.js-mbl-online-matches
+              div.js-bli-title.css-bli-title.css-ellipsis Elementary Linear Algebra
+              span.css-bli-isbn.js-bli-isbn
 
-              input.js-email(type='hidden')
-              .css-result-name.js-result-name
-                | username
-              .js-ppl-write-message.css-ppl-write-message
-                
-                .css-button-message.js-button-get-it
-                  | Message
-                .css-result-for-price.js-result-for-price
-                  | $80.00
-                .css-suggested-price 
-                  |Suggested Price:
-                div(style='clear: both;')
-
-                .js-ppl-message(style='display: none;')
-                  div
-                    label.css-textbox-title(for='message')
-                      | When and where would you like to exchange?
-                    textarea.css-message-box(name='message', type='text', maxlength='600', placeholder='I humbly request exchange for...')
-                      | Hey @NAME
-                      | I'd like to exchange @TITLE for @USD.
-                      | Could we meet by @LOCATION at @TIME on @DATE?
-                    div
-                      | Use common sense when trading. Meet in public places and bring friends along.
-                    br
-                    button.js-ppl-send-message
-                      | Send Message
-                    div(style='clear: both;')
-
-        #js-online-matches-tpl
-          ul
-            li.css-result
-              .js-store-image.css-store-image
-                img(alt='Logo', src='no-image.jpeg')
-              //
-                .css-result-name.js-result-name.
-                  Amazon
-              a.css-button-get-it.js-button-get-it.js-ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
-              .css-result-for-price.js-result-for-price
-                | $800.00
-
-              .css-ols-edition.js-ols-edition
-                | EDITION
-                // Int'l Edition
-
-        #js-online-matches
-          .css-online-store-heading
-            | Online Book Stores
-          ul
+      #css-column2
+        .css-item-list
+        #js-import-prompt(style='display: none;')
+          //
+            ul
+              li - Or -
+            .js-load-booklist.css-load-booklist
+              a(href="byu.html").
+                Import from your BYU booklist
+            .js-load-booklist.css-load-booklist
+              a(href="uvu.html").
+                Import from your UVU booklist
+        .js-autoloader
+        #js-imported-booklist.css-item-list
+        #js-imported-booklist-tpl
+          .css-item.js-item
+            .css-image-frame
+              .js-item-picture
+                img.css-book-image(src='css/default-book.jpg')
+            .css-item-info
+              .css-title.js-title
+                | Book Title 
+              //.css-book-course
+                span.js-course
+                  | ENG 101
+              //.css-semester.js-semester
+                | FALL 2011
+              div(style='clear: both;')
+              .css-isbn
+                .css-isbn-10
+                  | ISBN10:
+                  span.js-isbn10
+                    | 1234567890
+                .css-isbn-13
+                  | ISBN13:
+                  span.js-isbn13
+                    | 1234567890123
+              .css-edition
+                | Edition:
+                span.js-edition-data
+                  | 1st
+              .css-authors.js-authors
+                | authors:Gray Bot, willhelm, Conto, 
+            #css-item-bottom-container
+              .css-ibc-button.css-button-want2.js-button-want2
+                | Compare prices
+              .css-ibc-button.css-button-list2.js-button-list2
+                | Sell it
+              //.css-ibc-button.css-button-keep2.js-button-keep2
+                | Save
+              //.css-ibc-button.css-button-ignore2.js-button-ignore2
+                | Remove
           div(style='clear: both;')
+      
+        .css-loading-gif.js-loading-gif(style="display: none;")
+        #js-matches(style="display: none;")
+          .css-no-match
+          #js-person-matches
+            .css-online-store-heading
+              | Local listings
+            ul
+              li.css-result.css-ppl-widget.js-ppl-widget
+                .css-person.js-person
+                  img(alt='Logo', src='no-image.jpeg')
+
+                input.js-email(type='hidden')
+                .css-result-name.js-result-name
+                  | username
+                .js-ppl-write-message.css-ppl-write-message
+                
+                  .css-button-message.js-button-get-it
+                    | Message
+                  .css-result-for-price.js-result-for-price
+                    | $80.00
+                  .css-suggested-price 
+                    |Suggested Price:
+                  div(style='clear: both;')
+
+                  .js-ppl-message(style='display: none;')
+                    div
+                      label.css-textbox-title(for='message')
+                        | When and where would you like to exchange?
+                      textarea.css-message-box(name='message', type='text', maxlength='600', placeholder='I humbly request exchange for...')
+                        | Hey @NAME
+                        | I'd like to exchange @TITLE for @USD.
+                        | Could we meet by @LOCATION at @TIME on @DATE?
+                      div
+                        | Use common sense when trading. Meet in public places and bring friends along.
+                      br
+                      button.js-ppl-send-message
+                        | Send Message
+                      div(style='clear: both;')
+
+          #js-online-matches-tpl
+            ul
+              li.css-result
+                .js-store-image.css-store-image
+                  img(alt='Logo', src='no-image.jpeg')
+                //
+                  .css-result-name.js-result-name.
+                    Amazon
+                a.css-button-get-it.js-button-get-it.js-ols-buy-sell(href='#link-goes-here', target='_blank') Buy / Sell
+                .css-result-for-price.js-result-for-price
+                  | $800.00
+
+                .css-ols-edition.js-ols-edition
+                  | EDITION
+                  // Int'l Edition
+
+          #js-online-matches
+            .css-online-store-heading
+              | Online Book Stores
+            ul
+            div(style='clear: both;')
+        div(style='clear: both;')
+      #css-column3
       div(style='clear: both;')
-    #css-column3
-    div(style='clear: both;')
     footer
       span ©Blyph 2011-2013 &nbsp
       |created by &nbsp 
