@@ -18,9 +18,7 @@ html
     //a(style='position: absolute; top: 10px; right: 10px;', href='javascript:var s = document.createElement("script");s.type="text/javascript";document.body.appendChild(s);s.src="http://erkie.github.com/asteroids.min.js";void(1);') Bored?
     //#js-loading-mask.css-loading-mask
     #css-header-bg
- 
-    #css-wrapper
-      header
+    header
         a(href='index.html')
            #css-logo
         #css-social-sharing
@@ -36,13 +34,14 @@ html
           input#js-search.css-search(name='search', type='text', placeholder='Search by title or ISBN')
         input.css-search-icon(35='35', type='image', img='img', src='images/Search-icon.png', height='height', width='35', align='right')
 
-      #css-show-first.js-show-first
+    #css-show-first.js-show-first
         #css-banner-image-back  
         #css-banner-image
+        #css-banner-words-container
           h1.css-banner-head The best place to find college textbooks
           div(style='clear: both;')
           a.css-banner-sub-head(href="#")
-            h3 search books now &raquo;
+            h3 search books now &raquo;       
         ul
           li.css-cases
             a(href='#')
