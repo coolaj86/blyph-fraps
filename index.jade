@@ -73,17 +73,16 @@ html
     #css-wrapper
       #css-column1
         //#js-saveyourinfo.css-saveyourinfo 
-        #test-box
-          h3 Save your booklist for later
+        #css-test-box
+          
+          h3.css-login-header Save your booklist for later
+          
           form#js-email-form.css-email-form
-            div
-              | Email:
-              input.css-input-field(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
-            div
-              | School URL:
-              input.css-input-field(type='text', name='school', placeholder='ex: university.edu', width='500px')
-            div
-              input(type='submit', name='submit', value='Signup / Login')
+            | Email:
+            input.css-input-field(type='text', name='email', placeholder='ex: john.doe@gmail.com', width='500px')
+            | School URL:
+            input.css-input-field(type='text', name='school', placeholder='ex: university.edu', width='500px')
+            input(type='submit', name='submit', value='Signup / Login')
           a#js-gvoice(href='#gvoiceWidget') Have Questions? Need Help?
           #js-gvoiceWidget(style='display: none;')
             | Call AJ:
