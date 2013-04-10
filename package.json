@@ -19,6 +19,9 @@
     "json-storage": ">=1.1.2 <1.2.0",
     "ahr2": ">=2.3.2 <2.4.0",
     "campusbooks": ">=0.5.7 <0.6.0",
+    "serialize-form": "~1.1.1",
     "isbn": ">=0.1.0 <0.2.0"
+  },
+  "dependencies": {
   }
 }
