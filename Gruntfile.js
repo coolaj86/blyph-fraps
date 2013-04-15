@@ -40,15 +40,24 @@ module.exports = function (grunt) {
               }
           }
       }
+    , copy: {
+          main: {
+              files: [
+                  {src: ['images/**'], dest: '../public/images/', filter: 'isFile'}
+                , {src: ['bootstrap/**'], dest: '../public/bootstrap/', filter: 'isFile'}
+              ]
+          }
+      }
   });
   // uglify
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   //grunt.loadNpmTasks('grunt-develop');
   grunt.loadNpmTasks('grunt-pakmanager');
   //grunt.loadTasks('grunt-tasks/');
-  grunt.registerTask('make', ["jade:dist", "less:dist", "pakmanager:browser"]);
-  grunt.registerTask('build', ["jade:dev", "less:dev", "pakmanager:browser"]);
+  grunt.registerTask('make', ["jade:dist", "less:dist", "pakmanager:browser", "copy:main"]);
+  grunt.registerTask('build', ["jade:dev", "less:dev", "pakmanager:browser", "copy:main"]);
   grunt.registerTask('default', ['build', /*'develop',*/ 'watch']);
 };
