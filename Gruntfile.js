@@ -43,8 +43,8 @@ module.exports = function (grunt) {
     , copy: {
           main: {
               files: [
-                  {src: ['images/**'], dest: '../public/images/', filter: 'isFile'}
-                , {src: ['bootstrap/**'], dest: '../public/bootstrap/', filter: 'isFile'}
+                  {src: ['images/**'], dest: '../public/', filter: 'isFile'} // copies folder as well
+                , {src: ['bootstrap/**'], dest: '../public/', filter: 'isFile'}
               ]
           }
       }
